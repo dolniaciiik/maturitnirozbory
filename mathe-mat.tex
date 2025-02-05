@@ -1,0 +1,305 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[czech]{babel}
+\usepackage{amsmath, amssymb}
+
+\title{Matematika pro dementy}
+\author{Fantomas}
+\date{Únor 2025}
+
+\begin{document}
+\maketitle
+\pagebreak
+\begin{abstract}
+Vypracované otázky z matematiky, tipy a triky a tak
+\end{abstract}
+
+\pagebreak
+\section{Výroková logika a množiny}
+
+\subsection*{Množiny}
+Množinou rozumíme souhrn nějakých objektů (prvků). Zápis $x \in M$ znamená že prvek \textit{x} náleží množině \textit{M}. Množinu můžeme určit výčtem prvků, charakteristickou vlastností nebo 
+množinovými operacemi. Rovnost množin znamená, že každý prvek množiny \textit{M} je prvkem množiny \textit{N} a současně každý prvek množiny \textit{N} je prvkem množiny \textit{M}.
+
+\subsubsection*{Podmnožina}
+Množinu \textit{M} nazýváme podmnožinou množiny \textit{N}, právě když je každý prvek množiny \textit{M} prvkem množiny \textit{N}. Zápis symbolem $\subseteq$ nebo $\subset$; $M\subset N$ značí, že \textit{M} je vlastní podmnožinou množiny \textit{N}, tedy $M \neq N$; $M \subseteq N$ značí nevlastní podmnožinu, tedy $M \subset N$ nebo $M = N$.
+
+\subsubsection*{Charakteristická vlastnost}
+Zápis $A=\{x \in M; vlastnost\}$, kde každý prvek z množiny \textit{M}, mající danou vlastnost, patří do množiny \textit{A}.
+
+\subsection*{Množinové operace}
+\textbf{Sjednocení} $A \cup B$, je množina všech prvků, patřících alespoň do jedné z množin \textit{A}, \textit{B}.\\
+\textbf{Průnik} $A \cap B$, je množina všech prvků, patřících zároveň do obou množin \textit{A}, \textit{B}.\\
+\textbf{Rozdíl} $A \setminus B$, je množina všech prvků, patřících do množiny \textit{A} a \textbf{nepatřících} do množiny \textit{B}.\\
+! Sjednocení i průnik jsou komutativní a asociativní operace.\\
+\textbf{Doplněk} $A'_M $ množiny A v množině M je množina všech prvků množiny M, které nepatří do množiny A $\Rightarrow A'_M = M \setminus A$.
+
+\subsection*{Intervaly}
+Nechť \textit{a}, \textit{b} jsou dvě reálná čísla, že $a<b$, pak\\
+$(a,b) = \{x \in \mathbb{R}; a < x < b\}$ je otevřený interval\\
+$(a,b\rangle = \{x \in \mathbb{R}; a < x \leq b\}$ je polootevřený interval\\
+$\langle a,b) = \{x \in \mathbb{R}; a \leq x < b\}$ je polouzavřený interval\\
+$\langle a,b \rangle = \{x \in \mathbb{R}; a \leq x \leq b\}$ je uzavřený interval\\
+
+\subsection*{Výroky}
+Výrokem rozumíme sdělení, o kterém má smysl uvažovat jeho pravdivost. Každý výrok má \textbf{pravdivostní hodnotu}, 0 (nepravda) nebo 1 (pravda).\\
+\textbf{Hypotéza} je výrok jehož pravdivostní hodnotu neznáme. \\
+\textbf{Výroková formule} je tvrzení s proměnou, po dosazení se stane výrokem.
+
+\subsubsection*{Negace výroku}
+\textbf{Negace výroku}, \textit{"Není pravda, že A"}, zapisujeme $\neg A $, vždy opačná pravdivostní hodnota.
+
+\subsubsection*{Logické operátory}
+Pomocí těchto operátorů tvoříme \textbf{složené výroky} nebo \textbf{formule}.\\
+\textbf{Konjunkce}, "A a současně (et) B", zapisujeme $A \land B$
+\begin{center}
+\begin{tabular}{|c | c | c|} 
+\hline
+A & B & $A \land B$ \ \\
+\hline
+0 & 0 & 0 \\
+\hline
+0 & 1 & 0 \\
+\hline
+1 & 0 & 0 \\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{center}
+\textbf{Disjunkce}, "A nebo (vel) B", zapisujeme $A \lor B$
+\begin{center}
+\begin{tabular}{|c | c | c|} 
+\hline
+A & B & $A \lor B$ \ \\
+\hline
+0 & 0 & 0 \\
+\hline
+0 & 1 & 1 \\
+\hline
+1 & 0 & 1 \\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{center}
+\textbf{Ostrá disjunkce}, "Buď A, nebo B", zapisujeme $ A \veebar B $
+\begin{center}
+\begin{tabular}{|c | c | c|} 
+\hline
+A & B & $A \veebar B$ \ \\
+\hline
+0 & 0 & 0 \\
+\hline
+0 & 1 & 1 \\
+\hline
+1 & 0 & 1 \\
+\hline
+1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{center}
+\textbf{Implikace}, "Z A plyne B", zapisujeme $A \Rightarrow B$
+\begin{center}
+\begin{tabular}{|c | c | c|} 
+\hline
+A & B & $A \Rightarrow B$ \ \\
+\hline
+0 & 0 & 1 \\
+\hline
+0 & 1 & 1 \\
+\hline
+1 & 0 & 0 \\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{center}
+\textbf{Ekvivalence}, "A je ekvivalentní s B.", "A právě tehdy, když B.", zapisujeme $A \Leftrightarrow B$ 
+\begin{center}
+\begin{tabular}{|c | c | c|} 
+\hline
+A & B & $A \Leftrightarrow B$ \ \\
+\hline
+0 & 0 & 1 \\
+\hline
+0 & 1 & 0 \\
+\hline
+1 & 0 & 0 \\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection*{Tautologie}
+\textbf{Tautologie} je výrok/formule, který je vždy pravdivý.\\ 
+\textbf{Kontradikce} je výrok/formule, který je vždy nepravdivý.\\
+\textbf{Důležité tautologie}:
+\begin{itemize}
+\item $\neg(\neg A) \equiv A$ 
+\item $\neg (A \Rightarrow B) \equiv A \land \neg B$ 
+\item $ A \Rightarrow B \equiv \neg B \Rightarrow \neg A $
+\item $ \neg (A \land B) \equiv \neg A \lor \neg B$
+\item $ A \Rightarrow B \equiv \neg A \lor B $
+\item $ \neg (A \Leftrightarrow B) \equiv A \veebar B $
+\item $ \neg (A \lor B) \equiv \neg A \land \neg B $
+\item $ A \Leftrightarrow B \equiv (A \Rightarrow B) \land (B \Rightarrow A) $
+\item $ \neg (A \veebar B) \equiv A \Leftrightarrow B$
+\end{itemize}
+\pagebreak
+
+\subsection*{Kvantifikace výrokových formulí}
+Výroková formule $\varphi (x)$, obsahující proměnnou x, se stane výrokem po kvantifikaci \textit{x}.\\
+\textbf{Obecný kvantifikátor} $\forall$, "pro každé, pro všechna, ..." \\
+\textbf{Malý kvantifikátor} $\exists$, "existuje alespoň jedno, nějaké, ..." \\
+Př.: Formuli $\varphi (x) \sim x > 0$ lze kvantifikovat:\\
+$(\forall x \in \mathbb{N}) x > 0$ ... Všechna přirozená čísla jsou kladná.\\
+$ (\exists x \in \mathbb{N}) x > 0$ ... Existuje alespoň jedno přirozené číslo větší než 0.\\
+
+\subsubsection*{Negace kvantifikátorů}
+Negace výroku $(\forall x) \varphi (x) $ je výrok $(\exists x) \neg \varphi (x)$.\\
+Negace výroku $(\exists x) \varphi (x) $ je výrok $ (\forall x) \neg \varphi (x)$.\\
+
+\subsection*{Věta, definice, důkaz, správné úsudky}
+\textbf{Matematická věta} je důležité, netriviální a dostatečně obecné tvrzení neboli výrok. Věta obsahuje předpoklad a závěr.
+\textbf{Axiom (postulát)} je tvrzení, které se předem předpokládá za platné. 
+\textbf{Definice} slouží k zavedení nových pojmů; stanoví nový pojem a určí ho pomocí již stanovených.
+\subsubsection*{Správný úsudek}
+\textbf{Správný úsudek} je takový, kdy je z pravdivých premis vyvozen pravdivý závěr.\\
+\textbf{Zákon vyloučení možnosti}:
+\begin{gather*}
+ p \lor q \\ \neg p \\ \hline q
+\end{gather*}
+\textbf{Zákon odloučení}:
+\begin{gather*}
+p \Rightarrow q \\ p \\ \hline q
+\end{gather*}
+\textbf{Zákon nepřímé úvahy}:
+\begin{gather*}
+p \Rightarrow q \\ \neg q \\ \hline \neg p
+\end{gather*}
+\textbf{Zákon kontrapozice}:
+\begin{gather*}
+p \Rightarrow q \\ \hline \neg q \Rightarrow \neg p
+\end{gather*}
+\pagebreak
+
+\section{Mnohočleny, mocniny a odmocniny}
+
+Zápis $ 1 + \sqrt{1,5625-(\frac{3}{4})^2} $ je \textbf{číselný výraz} s hodnotou 2.\\
+Zápis $ x^2 + 2xy +1 $ je výraz s proměnnými \textit{x}, \textit{y}.\\
+\textbf{Definiční obor výrazu} je množina všech přípustných hodnot proměnné, pro které má výraz smysl.\\
+Výraz $V = x^2 +1 $ má definiční obor $\mathbb{R}$\\
+Výraz $V = \frac{1}{y}$ má smysl pro nenulové hodnoty \textit{y} \\
+ $\Rightarrow D_V : y \in \mathbb{R} \setminus \{0\}$  nebo $ D_V = (-\infty,0) \cup (0,+\infty)$\\
+
+\subsection*{Mnohočleny}
+\textbf{Mnohočlen} (polynom) s jednou proměnnou je výraz $ a_nx^n + a_{n-1}x^{n-1} +...+ a_1x^1 + a_0 $, kde \textit{n} je stupeň mnohočlenu.\\
+$a_1x + a_0$, resp. $ax+b$ je linearní dvojčlen.\\
+$a_2x^2 + a_1x + a_0$, resp. $ax^2 + bx + c$ je kvadratický trojčlen.\\
+
+\subsubsection*{Dělení mnohočlenu mnohočlenem}
+$(4x^3 + 3x^2 - 2x -5):(x-1) = 4x^2 + 7x + 5$\\
+$ 4x^3 - 4x^2$\\
+\rule{2cm}{0.4pt}\\
+$ 0x^3 + 7x^2 -2x$\\
+$ 0x^3 + 7x^2 -7x$\\
+\rule{3cm}{0.4pt}\\
+$0x^3 + 0x^2 + 5x - 5$\\
+$0x^3 + 0x^2 + 5x - 5$\\
+\rule{4cm}{0.4pt}\\
+$0x^3 + 0x^2 + 0x - 0$\\
+pozn. zbytek stejně jako u číselného dělení\\
+
+\subsubsection*{Umocňování}
+\begin{itemize}
+\item $(AB)^n = A^nB^n$
+\item $(A+B)^2 = A^2 + 2AB + B^2$
+\item $(A-B)^2 = A^2-2AB+B^2$
+\item $(A+B)^3=A^3 + 3A^2B + 3AB^2 + B^3$
+\item $(A-B)^3=A^3 - 3A^2B + 3AB^2 - B^3$
+\item $A^2-B^2 =(A-B)(A+B)$
+\item $A^3-B^3 = (A-B)(A^2+AB+B^2)$
+\item $A^3+B^3 = (A+B)(A^2-AB+B^2)$
+\item $(-A+B)^2 = (A-B)^2$
+\item $(-A-B)^2 = (A+B)^2$
+\item $(A+B)^n=\sum \binom{n}{k} a^{n-k}b^k $
+\end{itemize}
+
+\section{Lomené výrazy}
+\subsection*{Rozšiřování a krácení lomených výrazů}
+\textbf{Rozšířit lomený výraz} znamená vynásobit čitatele i jmenovatele stejným číslem.\\
+\begin{center}
+$\frac{x}{x+2}=\frac{x(x-2)}{(x+2)(x-2)}=\frac{x^2-2x}{x^2 - 4}$\\
+\end{center}
+\textbf{Krátit lomený výraz} znamená vydělit čitatele i jmenovatele stejným číslem.\\
+\begin{center}
+$\frac{a^2bc^3}{abc^2}=\frac{a^2bc^3:abc}{abc^2:abc}=\frac{ac^2}{c}=ac$\\
+\end{center}
+
+\subsection*{Sčítání a odčítání lomených výrazů}
+Nejdříve rozložíme všechny jmenovatele na součin, určíme společný jmenovatel jako NSN všech jmenovatelů, každý LV rozšíříme na společný jmenovatel, sečteme a odečteme čitatele, rozložíme čitatele na součin a zkrátíme (je-li to možné) a určíme podmínky.\\
+\[
+\begin{aligned}
+	V &= \frac{3+2x}{2-x}-\frac{2-3x}{2+x}+\frac{x(16-x)}{x^2-4}\\
+	V &= \frac{3+2x}{2-x}-\frac{2-3x}{2+x}+\frac{x(16-x)}{(x+2)(x-2)}\\
+	V &=  -\frac{(3+2x)(x+2)}{(x-2)(x+2)}-\frac{(2-3x)(x-2)}{(x+2)(x-2)}+\frac{x(16-x)}{(x+2)(x-2)}\\
+	V &= \frac{-7x-6-2x^2-8x+4+3x^2+16x-x^2}{(x-2)(x+2)}\\
+	V &= \frac{x-2}{(x-2)(x+2)}\\
+	V &= \frac{1}{x+2}\\
+\end{aligned}
+\]
+
+\subsection*{Vyjadřování neznámé ze vzorce}
+Při vyjadřování neznámé ze vzorce využíváme:
+\begin{itemize}
+	\item záměna stran vzorce
+	\item vynásobení/vydělení vzorce nenulovým číslem nebo výrazem
+	\item přičtení/odečtení libovolného čísla nebo výrazu
+	\item pokud jsou ve vzorci nezáporné veličiny, pak umocnění nebo odmocnění
+\end{itemize} 
+
+\subsection*{Výrazy s mocninami a odmocninami}
+Pro každá reálná \textit{a}, \textit{b} a pro každá reálná \textit{r}, \textit{s} platí:
+\begin{itemize}
+	\item $a^r \cdot a^s = a^{r+s}$
+	\item $ (a^r)^s = a^{r \cdot s} $
+	\item $ \frac{a^r}{a^s} = a^{r-s} $
+	\item $ (ab)^r = a^rb^r $
+	\item $ (\frac{a}{b})^r = \frac{a^r}{b^r} $
+	\item $ a^0 = 1, a \neq 0 $
+	\item $ a^{-r} = \frac{1}{a^r} $
+	\item $ \sqrt [s]{a^r} = a^{\frac{r}{s}}$
+\end{itemize}
+
+\section{Lineární rovnice a nerovnice}
+\section{Soustavy rovnic a nerovnice}
+\section{Kvadratická rovnice a nerovnice}
+\section{Lineární funkce a její vlastnosti}
+\section{Kvadratická funkce a její vlastnosti}
+\section{Mocninná a lomená funkce a její vlastnosti}
+\section{Exponenciální a logaritmická funkce}
+\section{Goniometrické funkce}
+\section{Množiny bodů dané vlastnosti}
+\section{Konstrukce trojúhelníků a čtyřúhelníků}
+\section{Shodná zobrazení}
+\section{Podobná zobrazení}
+\section{Pythagorova a Eukleidovy věty}
+\section{Trigonometrie obecného trojúhelníku}
+\section{Stereometrie – polohové vlastnosti}
+\section{Stereometrie – metrické vlastnosti}
+\section{Stereometrie – objem a povrch těles}
+\section{Analytická geometrie – body a vektory}
+\section{Analytická geometrie – přímka a polorovina v E2}
+\section{Analytická geometrie – přímka a rovina v E3}
+\section{Analytická geometrie – kuželosečky}
+\section{Kombinatorika}
+\section{Pravděpodobnost}
+\section{Statistika}
+\section{Posloupnosti}
+\section{Limita posloupnosti a nekonečná geometrická řada}
+\section{Limita a derivace funkce}
+
+
+
+\end{document}
