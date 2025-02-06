@@ -1,6 +1,12 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[czech]{babel}
 \usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usepackage{float}
+\floatstyle{boxed} 
+\restylefloat{figure}
+\newcommand{\imply}{\Rightarrow}
+\newcommand{\equiva}{\Leftrightarrow}
 
 \title{Matematika pro dementy}
 \author{Fantomas}
@@ -273,7 +279,260 @@ Pro každá reálná \textit{a}, \textit{b} a pro každá reálná \textit{r}, \
 \end{itemize}
 
 \section{Lineární rovnice a nerovnice}
+
+\subsection*{Lineární rovnice}
+\textbf{Lineární rovnice} má tvar $ax+b=0, a \neq 0$. Má jediný kořen $x=-\frac{b}{a}$.\\
+Pokud užitím ekvivalentních úprav získáme tvar $0x+b=0$, pak má rovnice nekonečně mnoho řešení ($b=0$), nebo nemá řešení ($b \neq 0$).\\
+\textbf{Definiční obor rovnice} je množina všech přípustných hodnot jejích kořenů; $x_1 \notin D_r \imply x_1 \notin K$.\\
+
+\subsection*{Lineární nerovnice}
+\textbf{Lineární nerovnice} má tvar: 
+\begin{itemize}
+\item $ax + b < 0$
+\item $ax + b > 0$
+\item $ax + b \leq 0$
+\item $ax + b \geq 0$
+\end{itemize}
+Pokud lze nerovnici převést na tvar $ax + b \leq 0$:
+\begin{center}
+$b \leq 0 \imply K = \mathbb{R} \lor b > 0 \imply K = \{\}$
+\end{center}
+Pokud lze nerovnici převést na tvar $ax + b \geq 0$:
+\begin{center}
+$b \geq 0 \imply K = \mathbb{R} \lor b < 0 \imply K = \{\}$
+\end{center}
+Pokud lze nerovnici převést na tvar $ax + b < 0$:
+\begin{center}
+$b < 0 \imply K = \mathbb{R} \lor b \geq 0 \imply K = \{\}$
+\end{center}
+Pokud lze nerovnici převést na tvar $ax + b > 0$:
+\begin{center}
+$b > 0 \imply K = \mathbb{R} \lor b \leq 0 \imply K = \{\}$
+\end{center}
+\pagebreak
+
+\subsection*{Grafické řešení lineární rovnice a nerovnice}
+\textbf{Lineární funkce} je funkce s předpisem $y=ax+b$\\
+Rovnici převedeme na tvar $ax+b=cx+d$ a budeme uvažovat $f(x)=ax+b$ a $g(x)=cx+d$, kořen leží v $f(x) \cap g(x)$.\\
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% init-xy
+\draw [blue] (-1.5,3.5) -- (3.5,-1.5);
+\draw [blue] (-1.25,-3.5) -- (2.25,3.5);
+\filldraw [red] (1,1) circle (2pt);
+\end{tikzpicture}
+\caption{2x-1=2-x}
+\end{figure}
+
+\textbf{Lineární nerovnici} řešíme podobně jako rovnici: převedeme na tvar $ax+b=cx+d$ a budeme uvažovat $f(x)=ax+b$ a $g(x)=cx+d$, nerovnice mohou mít jeden z tvarů:\\
+\begin{center}
+\begin{tabular}{c  c  c  c} 
+$-x-1>2x-\frac{5}{2}$ & $-x-1<2x-\frac{5}{2}$ & $-x-1 \geq 2x-\frac{5}{2}$ & $-x-1 \leq 2x-\frac{5}{2}$\\
+$f(x)>g(x)$ & $f(x)<g(x)$ & $f(x) \geq g(x)$ & $f(x) \leq g(x)$\\
+$K = (-\infty, \frac{1}{2})$ & $K = (\frac{1}{2}, \infty)$ & $K = (-\infty, \frac{1}{2} \rangle $ & $K = \langle \frac{1}{2}, \infty) $\\
+ 
+ad 2 &
+ad 3 &
+ad 4 &
+ad 5 \\
+\end{tabular}
+\end{center}
+
+% ad 2
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+% draw funcs
+\draw [blue] (-3.5,2.5) -- (2.5,-3.5);
+\draw [blue] (-0.5,-3.5) -- (3,3.5);
+% draw roots
+\draw [red] (-3.5,0) -- (0.5,0);
+\draw [red] (0.5,0) circle (3pt);
+\draw [gray, densely dotted] (0.5,-1.5) -- (0.5,0);
+\end{tikzpicture}
+\caption{$-x-1>2x-\frac{5}{2}$}
+\end{figure}
+
+% ad 3
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% init-xy
+\draw [blue] (-3.5,2.5) -- (2.5,-3.5);
+\draw [blue] (-0.5,-3.5) -- (3,3.5);
+%draw roots
+\draw [red]  (0.5,0) -- (3.5,0);
+\draw [red] (0.5,0) circle (3pt);
+\draw [gray, densely dotted] (0.5,-1.5) -- (0.5,0);
+\end{tikzpicture}
+\caption{ $-x-1<2x-\frac{5}{2}$ }
+\end{figure}
+
+% ad 4
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% init-xy
+\draw [blue] (-3.5,2.5) -- (2.5,-3.5);
+\draw [blue] (-0.5,-3.5) -- (3,3.5);
+%draw roots
+\draw [red] (-3.5,0) -- (0.5,0);
+\filldraw [red] (0.5,0) circle (3pt);
+\draw [gray, densely dotted] (0.5,-1.5) -- (0.5,0);
+\end{tikzpicture}
+\caption{$-x-1 \geq 2x-\frac{5}{2}$}
+\end{figure}
+
+% ad 5
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% init-xy
+\draw [blue] (-3.5,2.5) -- (2.5,-3.5);
+\draw [blue] (-0.5,-3.5) -- (3,3.5);
+%draw roots
+\draw [red]  (0.5,0) -- (3.5,0);
+\filldraw [red] (0.5,0) circle (3pt);
+\draw [gray, densely dotted] (0.5,-1.5) -- (0.5,0);
+\end{tikzpicture}
+\caption{$-x-1 \leq 2x-\frac{5}{2}$}
+\end{figure}
+
+\pagebreak
+
+\subsection*{Rovnice a nerovnice v součinovém tvaru}
+Při řešení využíváme $ab = 0 \equiva a = 0 \lor b = 0$.\\
+Př.:\\
+\[\begin{aligned}
+x(x+2) = 0\\
+x = 0 \lor x = -2\\
+K = \{-2;0\}
+\end{aligned}\]
+
+Lze též použít \textbf{metodu nulových bodů}\\
+Př.:\\
+\[\begin{aligned}
+4x^2 - 6x < 2x\\
+4x^2 - 8x < 0\\
+4x(x-2)<0\\
+NB = \{0,2\}
+\end{aligned}\]
+
+\begin{center}
+\begin{tabular}{| c | c | c | c |}
+\hline
+ & $(-\infty;0)$ & $(0;2)$ & $(2;+\infty)$\\
+\hline
+$4x$ & - & + & +\\
+\hline
+$x-2$ & - & - & +\\
+\hline
+$*$ & + & - & +\\
+\hline
+\end{tabular}
+\end{center}
+
+\[\begin{aligned}
+K = (0;2)
+\end{aligned}\]
+
+\subsection*{Rovnice s neznámou ve jmenovateli}
+Má-li rovnice neznámou ve jmenovateli, je nutné vždy stanovit její definiční obor.
+
+\subsection*{Rovnice v podílovém tvaru}
+Rovnice v podílovém tvaru má na jedné straně jediný zlomek s neznámou ve jmenovateli a na druhé straně nulu. Po stanovení definičního oboru řešíme rovnici tak,
+že položíme čitatele rovno nule a řešíme jako lineární rovnici nebo převedením na součinový tvar.
+
+\pagebreak
+
+\subsection*{Nerovnice v podílovém tvaru}
+\textbf{Nerovnici v podílovém tvaru nesmíme vynásobit společným jmenovatelem, který obsahuje neznámou!}\\
+Nerovnici v podílovém tvaru převedeme na podílový tvar a řešíme metodou nulových bodů.\\
+Př.:\\
+
+\[
+\begin{aligned}
+\frac{2x-1}{x+1} \geq 1\\
+x \neq -1\\
+\frac{2x-1}{x+1} -1 \geq 0\\
+\frac{2x-1-(x+1)}{x+1} \geq 0\\
+\frac{x-2}{x+1} \geq 0\\
+NB = \{-1,2\}
+\end{aligned}\]
+
+\begin{center}
+\begin{tabular}{| c | c | c | c |}
+\hline
+ & $(-\infty;-1)$ & $(-1;2 \rangle $ & $ \langle 2;+\infty)$\\
+\hline
+$x-2$ & - & - & +\\
+\hline
+$x+1$ & - & + & +\\
+\hline
+$*$ & + & - & +\\
+\hline
+\end{tabular}
+\end{center}
+
+\[\begin{aligned}
+K = (-\infty;-1) \cup \langle 2; +\infty)
+\end{aligned}\]
+
+
+
 \section{Soustavy rovnic a nerovnice}
+\subsection*{Soustava nerovnic}
+\textbf{Soustavu nerovnic} s jednou neznámou řešíme vyřešením každé nerovnice zvlášť. Řešením soustavy je $K_1 \cap K_2$.\\
+Př.:\\
+\[\begin{aligned}
+2x - 5 < 0\\
+3x + 2 \geq 0
+\end{aligned}\]
+
+\begin{center}
+\begin{tabular}{ c c c }
+$2x-5 < 0$ & $3x+2 \geq 0$\\
+$2x < 5$ & $2x \geq -2$\\
+$x < \frac{5}{5}$ & $x \geq -\frac{2}{3}$\\
+$K_1 = (-\infty,\frac{5}{2})$ & $K_2 = \langle -\frac{2}{3}, \infty)$
+\end{tabular}
+\end{center}
+
+\[
+\begin{aligned} 
+K = K_1 \cap K_2 = \langle - \frac{2}{3}, \frac{5}{2})
+\end{aligned}
+\]
+
+\textbf{Složenou nerovnici} $ax + b < cx + d < ex + f$ převedeme na soustavu nerovnic:
+\[ 
+\begin{aligned}
+ax + b < cx + d\\
+cx + d < ex + f
+\end{aligned}
+\]
+
 \section{Kvadratická rovnice a nerovnice}
 \section{Lineární funkce a její vlastnosti}
 \section{Kvadratická funkce a její vlastnosti}
