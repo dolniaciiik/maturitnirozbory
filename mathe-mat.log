@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  7 FEB 2025 00:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  7 FEB 2025 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -486,113 +486,118 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./mathe-ma
+t.toc [3])
+\tf@toc=\write4
+\openout4 = `mathe-mat.toc'.
+
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
-[3] [4] [5{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+[5] [6] [7{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
-Underfull \hbox (badness 10000) in paragraph at lines 158--164
+Underfull \hbox (badness 10000) in paragraph at lines 161--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 195--201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--219
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
 
-Overfull \hbox (2.37772pt too wide) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 211--222
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Overfull \hbox (2.37772pt too wide) in paragraph at lines 244--245
 \OT1/cmr/bx/n/12 Kr^^Satit lo-men^^Sy v^^Syraz \OT1/cmr/m/n/12 zna-men^^Sa vyd^
 ^Telit ^^Tcitatele i jme-no-va-tele stejn^^Sym ^^Tc^^S^^Pslem. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 287--290
 
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 315--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 318--333
 
  []
 
 
-Overfull \hbox (3.29294pt too wide) in paragraph at lines 334--344
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+
+Overfull \hbox (3.29294pt too wide) in paragraph at lines 337--347
  [] 
  []
 
-[12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 425--427
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--435
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 470--473
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--507
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
 
  []
 
-[16] [17]
+[18] [19]
 Overfull \vbox (311.08366pt too high) has occurred while \output is active []
 
 
-[18] (./mathe-mat.aux)
+[20] (./mathe-mat.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14315 strings out of 474103
- 284210 string characters out of 5747481
+ 14322 strings out of 474103
+ 284312 string characters out of 5747481
  1940496 words of memory out of 5000000
- 36455 multiletter control sequences out of 15000+600000
+ 36459 multiletter control sequences out of 15000+600000
  568124 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,9n,107p,408b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -612,10 +617,10 @@ pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
 /symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm120
 0.pfb>
-Output written on mathe-mat.pdf (18 pages, 212143 bytes).
+Output written on mathe-mat.pdf (20 pages, 213768 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
