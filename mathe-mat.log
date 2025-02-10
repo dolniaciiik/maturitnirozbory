@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  9 FEB 2025 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  10 FEB 2025 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -427,8 +427,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks36
 \@floatcapt=\box65
 )
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.t
+ex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
 \@float@every@figure=\toks37
-(c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box66
@@ -436,20 +444,20 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 (./mathe-mat.aux)
 \openout1 = `mathe-mat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -473,13 +481,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -492,180 +500,190 @@ t.toc [3])
 \openout4 = `mathe-mat.toc'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 46--51
+Underfull \hbox (badness 10000) in paragraph at lines 47--52
 
  []
 
 [5] [6] [7{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 199--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--209
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--222
+Underfull \hbox (badness 10000) in paragraph at lines 212--223
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Overfull \hbox (2.37772pt too wide) in paragraph at lines 244--245
+Overfull \hbox (2.37772pt too wide) in paragraph at lines 245--246
 \OT1/cmr/bx/n/12 Kr^^Satit lo-men^^Sy v^^Syraz \OT1/cmr/m/n/12 zna-men^^Sa vyd^
 ^Telit ^^Tcitatele i jme-no-va-tele stejn^^Sym ^^Tc^^S^^Pslem. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
 
  []
 
 [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 318--333
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Overfull \hbox (3.29294pt too wide) in paragraph at lines 337--347
+Overfull \hbox (3.29294pt too wide) in paragraph at lines 338--348
  [] 
  []
 
 [14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 428--430
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--438
+Underfull \hbox (badness 10000) in paragraph at lines 437--439
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 473--476
+Underfull \hbox (badness 10000) in paragraph at lines 474--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--527
+Underfull \hbox (badness 10000) in paragraph at lines 525--528
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 551--553
+Underfull \hbox (badness 10000) in paragraph at lines 552--554
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
 [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 592--594
+Underfull \hbox (badness 10000) in paragraph at lines 593--595
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--625
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--644
+Underfull \hbox (badness 10000) in paragraph at lines 641--645
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 651--652
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--663
+Underfull \hbox (badness 10000) in paragraph at lines 661--664
 
  []
 
-[22]
-Overfull \vbox (418.08366pt too high) has occurred while \output is active []
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+ []
+
+[25]
+Overfull \vbox (340.83366pt too high) has occurred while \output is active []
 
 
-[23] (./mathe-mat.aux)
+[26] (./mathe-mat.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14337 strings out of 474103
- 284562 string characters out of 5747481
+ 14466 strings out of 474103
+ 288520 string characters out of 5747481
  1940496 words of memory out of 5000000
- 36470 multiletter control sequences out of 15000+600000
+ 36593 multiletter control sequences out of 15000+600000
  569390 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,107p,408b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,107p,408b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-di
@@ -682,10 +700,10 @@ pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
 /symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm120
 0.pfb>
-Output written on mathe-mat.pdf (23 pages, 223396 bytes).
+Output written on mathe-mat.pdf (26 pages, 231159 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 179 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
