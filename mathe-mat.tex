@@ -502,7 +502,90 @@ $*$ & + & - & +\\
 K = (-\infty;-1) \cup \langle 2; +\infty)
 \end{aligned}\]
 
+\subsection*{Rovnice s absolutní hodnotou}
+\textbf{Absolutní hodnota} z reálného čísla je definována jako\\
+\[
+   |a| =
+    \begin{cases}
+        a; & a \geq 0 \\
+        -a; & a < 0
+    \end{cases}
+\]
 
+Také platí :\\
+\begin{itemize}
+
+\item $|a|=|-a|$
+\item $|a| \geq 0$
+\item $|ab|=|a| \cdot |b|$
+\item $|\frac{a}{b}| = \frac{|a|}{|b|}$
+\end{itemize}
+
+Nejprve určíme argumenty všech absolutních hodnot, ze kterých pak získáme nulové body a intervaly (u intervalu vždy ostrá závorka, kromě NB z jmenovatele). Poté vytvoříme
+tabulku jako v tabulkové metodě. Řešíme s upravenými tvary dle definice. \textbf{Ukaždého kořenu musíme ověřit zda leží v intervalu!}\\
+Př.:\\
+
+\begin{center}
+$|x-3| + 2x = 9$\\
+\begin{tabular}{| c | c | c |}
+\hline
+$x \in $ & $(-\infty; 3 \rangle$ & $\langle 3; +\infty)$\\
+\hline
+$x-3$ & $-$ & $+$\\
+\hline
+$|x-3|$ & $(x-3)$ & $x-3$\\
+\hline
+\end{tabular}
+\end{center}
+
+\[
+    \begin{array}{ll}
+        \text{a)} & \hfill \text{b)}\\
+         x \in (-\infty; 3 \rangle & \hfill x \in \langle 3; +\infty)\\
+        -(x-3) + 2x = 9 & \hfill x - 3 + 2x = 9\\
+        -x+ 3 + 2x = 9 & \hfill 3x - 3 = 9\\
+        x = 6 & \hfill x = 4\\
+        6 \notin (-\infty; 3 \rangle & \hfill 4 \in \langle 3; +\infty)\\
+        K_1 = \{\} & \hfill K_2 = \{4\}\\
+    \end{array}
+\]\\
+Rovnice má tedy jediný kořen $x=4$, tedy $K=\{4\}$.\\
+
+Rovnici ve tvaru $|ax+b|=c$  lze řešit i \textbf{rychlejší metodou} bez stanovení intervalů, neboť platí $ax+b=c \lor ax+b=-c$.\\
+I rovnici ve tvaru $|ax+b|=|cx+d|$ lze řešit touto rychlou metodou: $ax+b = cx+d \lor ax+b=-(cx+d)$.\\
+
+\subsection*{Nerovnice s absolutní hodnotou}
+Řešíme obdobně jako rovnici s absolutní hodnotou. Z argumentů určíme NB a řešíme nerovnice nahrezené dle definice. Množina řešení je sjednocení množin každého z případů.\\
+
+\begin{center}
+\begin{tabular}{| c | c | c |}
+\hline
+$ x \in $ & $ (-\infty; 1 \rangle $ & $ \langle 1; + \infty) $\\
+\hline
+$x-1$ & $-$ & $+$\\
+\hline
+$|x-1|$ & $-(x-1)$ & $x-1$\\
+\hline
+\end{tabular}
+\end{center}
+
+\[
+	\begin{array}{ll}
+	\text{a)} & \text{b)}\\
+	x \in (-\infty, 1 \rangle & \hfill x \in [1;+\infty)\\
+	-(x-1) + 3x < 11 & \hfill x - 1 + 3x < 11\\
+          -x + 1 + 3x < 11 & \hfill 4x < 12\\
+          x < 5 & \hfill x < 3\\
+	x \in (-\infty;5) & \hfill x \in (-\infty;3)\\
+           K_1 = (-\infty; 1 \rangle \cap (-\infty;5) & \hfill K_2 = (-\infty;3) \cap \langle 1;+\infty)\\
+           K_1 = (-\infty;1 \rangle & \hfill K_2 = \langle 1;3)
+	\end{array}
+\]
+\begin{center}
+Nerovnice má řešení $K = K_1 \cup K_2 = (-\infty; 3)$.\\
+\end{center}
+
+\pagebreak
 
 \section{Soustavy rovnic a nerovnice}
 \subsection*{Soustava nerovnic}
@@ -535,6 +618,59 @@ ax + b < cx + d\\
 cx + d < ex + f
 \end{aligned}
 \]
+
+\subsection*{Soustavy rovnic o dvou neznámých}
+
+Soustavu dvou rovnic řešíme buď:\\
+\begin{itemize}
+\item \textbf{slučovací} (sčítací) - rovnice vhodně vynásobíme a sečteme
+\item \textbf{porovnávací} - z každé rovnice vyjádříme tutéž neznámou a porovnáme
+\item \textbf{dosazovací} - z jedné rovnice vyjádříme neznámou a dosadíme do druhé 
+\end{itemize}
+
+\subsubsection*{Řešení pomocí inverzních matic}
+Soustavu m lineárních rovnic o n neznámých ve tvaru\\
+\[
+\begin{aligned}
+a_{11}x_1 + a_{12}x_2 + ... + a_{1n}x_n = b_1\\
+a_{21}x_1 + a_{22}x_2 + ... + a_{2n}x_n = b_2\\
+...\\
+a_{m1}x_1 + a_{m1}x_2 + ... + a_{mn}x_n = b_m\\
+\end{aligned}
+\]
+lze přepsat jako $A \cdot X = B$.\\
+Je-li v soustavě rovnic $A \cdot X = B$ matice B rovna nulové matici, mluvíme o homogenní soustavě rovnic. Matici $X$ nazýváme maticí řešení.\\
+Maticovou rovnici $A \cdot X = B$ řešíme tak, že vynásobíme obě strany zleva vynásobíme maticí $A^{-1}$\\
+\[ \begin{aligned}
+\textbf{A} \cdot \textbf{X} = \textbf{B}\\
+\textbf{$A^{-1}$} \cdot \textbf{A} \cdot \textbf{X} = \textbf{$A^{-1}$} \cdot \textbf{B}\\
+\text{nezapomenout že } A^{-1} \cdot A = E\\
+E \cdot \textbf{X} = \textbf{$A^{-1}$} \cdot \textbf{B}\\
+\text{zde platí že } E \cdot X = X\\
+\textbf{X} = \textbf{$A^{-1}$} \cdot \textbf{B}
+\end{aligned} \]\\
+
+Př.:\\
+\[
+ \begin{aligned}
+4x + y = -2\\
+3x + y = 5
+\end{aligned}\]\\
+
+$A \cdot X = B$, kde $A= \begin{pmatrix} 4 & 1 \\ 3 & 1  \end{pmatrix}$, $B= \begin{pmatrix} -2 \\ 5 \end{pmatrix}$.\\
+Určíme inverzní matici $A^{-1}= \begin{pmatrix} 1 & -1 \\ -3 & 4  \end{pmatrix}$ a $X = A^{-1} \cdot B =$\\
+$= \begin{pmatrix} 1 & -1 \\ -3 & 4  \end{pmatrix} \cdot \begin{pmatrix} -2 \\ 5 \end{pmatrix} = \begin{pmatrix} -7 \\ 26 \end{pmatrix} \imply x = -7 \land y = 26$\\
+
+Pokud rozšíříme matici soustavy na tvar $(A|B)$, pak platí, že (Frobeniova věta) soustava je řešitelná, když $h(A)=h(A|B)$. Pokud $h(a)$ se rovná počtu neznámých, má soustava jediné řešení.
+
+\subsubsection*{Gaussova eliminační metoda}
+
+
+
+
+\subsection*{Grafické řešení soustavy (ne)rovnic o dvou neznámých}
+\subsection*{Soustavy tří rovnic o třech neznámých}
+\subsection*{}
 
 \section{Kvadratická rovnice a nerovnice}
 \section{Lineární funkce a její vlastnosti}
