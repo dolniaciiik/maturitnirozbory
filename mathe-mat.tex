@@ -193,7 +193,7 @@ p \Rightarrow q \\ \neg q \\ \hline \neg p
 p \Rightarrow q \\ \hline \neg q \Rightarrow \neg p
 \end{gather*}
 \pagebreak
-
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Mnohočleny, mocniny a odmocniny}
 
 Zápis $ 1 + \sqrt{1,5625-(\frac{3}{4})^2} $ je \textbf{číselný výraz} s hodnotou 2.\\
@@ -281,7 +281,7 @@ Pro každá reálná \textit{a}, \textit{b} a pro každá reálná \textit{r}, \
 	\item $ a^{-r} = \frac{1}{a^r} $
 	\item $ \sqrt [s]{a^r} = a^{\frac{r}{s}}$
 \end{itemize}
-
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Lineární rovnice a nerovnice}
 
 \subsection*{Lineární rovnice}
@@ -746,9 +746,119 @@ Soustavu tří rovnic o třech neznámých řešíme nejčastěji metodou slučo
 \textbf{Metoda dosazovací}: z jedné rovnice vyjádříme jednu neznámou a dosadíme do zbylých dvou. Soustavu dvou rovnic o dvou neznámých vyřešíme.\\
 \textbf{Metoda slučovací}: Vhodně rovnice vynásobíme a sečteme tak, abychom získali soustavu dvou rovnic o dvou neznámých.\\
 Můžeme také použít inverzní matici, GEM nebo Cramerovy vzorce.
-\subsection*{}
+\pagebreak
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 
 \section{Kvadratická rovnice a nerovnice}
+
+Rovnici nazýváme kvadratickou, pokud lze převést na tvar $ax^2+bx+c=0$.\\
+Číslo \textit{a} nazýváme kvadratický koeficient, \textit{b} lineární koeficient a \textit{c} absolutní člen.\\
+\begin{itemize}
+\item \textbf{Ryze kvadratická} - $b = 0 \land c \neq 0$ - $x^2-4=0$
+\item \textbf{Kvadratická bez absolutního členu} - $b \neq 0 \land c = 0$ - $x^2+2x=0$
+\item \textbf{Úplná kvadratická} - $b \neq 0 \land c \neq 0$ - $2x^2+4x-4=0$
+\end{itemize}
+
+\subsection*{Ryze kvadratická rovnice}
+\textbf{Ryze kvadratická rovnice} $ax^2+c=0$ je řešitelná právě když $a \cdot c < 0$. Řešíme ji převedním pomocí rozdílu čtverců.
+Př.:\\
+\[
+\begin{aligned}
+4x^2-8=0\\
+4 \cdot (-8) < 0 \imply\text{je řešitelná}\\
+4(x^2-2)=0\\
+4(x-\sqrt{2})(x+\sqrt{2}) = 0\\
+K = \{ -\sqrt{2}, \sqrt{2} \}
+\end{aligned}
+\]
+
+\subsection*{Kvadratická rovnice bez absolutního členu}
+\textbf{Kvadratická rovnice bez absolutního členu} $ax^2+bx=0$ je řešitelná vždy a jeden z kořenů je roven nule. Řešíme převedením na součinový tvar vytknutím \textit{x}.
+Př.:\\
+\[\begin{aligned}
+3x^2 + 18x = 0\\
+3x(x+6)=0\\
+K = \{ -6;0 \}
+\end{aligned}\]
+
+\subsection*{Úplná kvadratická}
+Řešíme pomocí \textbf{diskriminantu} a dosazením do vzorce.\\ $D = b^2-4ac \land x_{1/2}=\frac{-b \pm \sqrt{D}}{2a}$.\\
+\pagebreak
+\begin{itemize}
+\item $D > 0 \imply K=\{x_1, x_2\}, |K|=2$
+\item $D = 0 \imply K = \{x_1/2\}, x_1=x_2, |K|=1$
+\item $D < 0 \imply K = \{\}, |K|=0$
+\end{itemize}
+
+\subsection*{Rovnice vyšších řádů řešené pomocí KR}
+\textbf{Bikvadratická rovnice} ve tvaru $ax^4+bx^2+c=0$, kterou substitucí $y=x^2$ převedeme na kvadratickou rovnici.\\
+Př.:\\
+\[\begin{aligned}
+x^4 - 3x^2+2=0\\
+[y=x^2]\\
+y^2 - 3y + 2 = 0\\
+(y-1)(y-2) = 0\\
+y = 1 \lor y = 2\\
+x^2 = 1 \imply x = 1 \lor x = -1\\
+x^2 = 2 \imply x = \sqrt{2} \lor -\sqrt{2}\\
+K = \{ \sqrt(2);-1;1;\sqrt{2} \}
+\end{aligned}\]
+
+\subsection*{Viètovy vzorce}
+Kvadratickou rovnici ve tvaru $ax^2+bx+c=0$ s kořeny $x_1,x_2$ lze rozložit na kořenové činitele: $a(x-x_1)(x-x_2)$.\\
+Každou kvadratickou rovnici lze vydělením \textit{a} normovat na tvar $x^2+\frac{b}{a}x+\frac{c}{a}x=0$, nebo $x+px+q=0$.\\
+Pro normovanou rovnici platí $x_1+x_2 = -p \land x_1 \cdot x_2 = q$.\\
+
+\subsection*{Kvadratické nerovnice}
+\textbf{Kvadratickou nerovnici} $ax^2+bx+c \geq 0$ řešíme převedením na součinový tvar pomocí rozkladů na kořenové činitele a poté metodou nulových bodů.\\
+\pagebreak
+Př.:\\
+\[ \begin{aligned}
+-2x^2-x+3 \geq 0\\
+2x^2 + x - 3 \leq 0\\
+D = 25 \land x_1/2=\frac{-1+\sqrt{25}}{2 \cdot 2}\\
+2(x-1)(x+\frac{3}{2}) \leq 0\\
+\end{aligned}\] 
+
+\begin{center}
+\begin{tabular}{| c | c | c | c |}
+\hline
+$x \in$ & $(-\infty;-\frac{3}{2} \rangle$ & $\langle -\frac{3}{2};1 \rangle$ & $\langle 1; +\infty)$\\
+\hline
+$x-1$ & $-$ & $-$ & $+$\\
+\hline
+$x+\frac{3}{2}$ & $-$ & $+$ & $+$\\
+\hline
+$*$ & $+$ & $-$ & $+$\\
+\hline
+\end{tabular}\\
+$K = \langle -\frac{3}{2};1 \rangle$\\
+\end{center}
+
+\subsection*{Soustava lineární a kvadratické rovnice}
+Soustavu vždy řešíme dosazovací metodou a to tak, že z lineární rovnice vyjádříme neznámou a dosadíme to kvadratické.
+
+\subsection*{Iracionální rovnice}
+\textbf{Iracionální rovnice} je rovnice, ve které je neznámá v odmocnině. Takovou rovnici musíme řešit po stanovení $D_f$. Můžeme poté obě strany umocnit, což je úprava důsledková,
+takže musíme provést zkoušku a vyloučit některé kořeny.\\
+Př.:\\
+\[
+\begin{aligned}
+\sqrt{9+x}-\sqrt{x-7}=2\\
+\sqrt{9+x}=2+\sqrt{x-7} \text{\quad} |^2\\
+9+x = 4 + 4\sqrt{x-7} + x - 7\\
+4\sqrt{x-7} = 12\\
+\sqrt{x-7} = 3 \text{\quad} |^2\\
+x-7 = 9\\
+x=16
+\end{aligned}
+\]
+
+Zk.:\\
+$ L(16)=\sqrt{9+16} - \sqrt{16-7}=\sqrt{25}-\sqrt{9}=2$\\
+$P(16)=2$\\
+$L = P \imply K=\{ 16 \}$
+
 \section{Lineární funkce a její vlastnosti}
 \section{Kvadratická funkce a její vlastnosti}
 \section{Mocninná a lomená funkce a její vlastnosti}
