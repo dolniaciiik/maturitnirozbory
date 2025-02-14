@@ -1,7 +1,7 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[czech]{babel}
 \usepackage{amsmath, amssymb}
-\usepackage{tikz}
+\usepackage{tikz,pgfplots}
 \usepackage{float}
 \usepackage{hyperref}
 \usetikzlibrary{patterns}
@@ -861,6 +861,49 @@ $P(16)=2$\\
 $L = P \imply K=\{ 16 \}$
 
 \section{Lineární funkce a její vlastnosti}
+
+Nechť jsou dány neprázdné podmnožiny \textit{A,B} množiny $\mathbb{R}$. Funkce \textit{f} na množině \textit{A} je předpis, který každému číslu z množiny \textit{A} přiřazuje
+právě jedno číslo z množiny \textit{B}.\\
+Množina \textit{A} se nazývá \textbf{definiční obor funkce}, značí se $D_f$ a množina \textit{B} \textbf{obor hodnot funkce}, značí se $H_f$.\\
+Funkce může být zadána:
+\begin{itemize}
+\item předpisem $f: y = 4x-1$ 
+\item tabulkou
+\item grafem
+\end{itemize}
+
+Že číslo $x_0$ z $D_f$ přiřadí číslo $y_0$ z $H_f$, zapisujeme $y_0=f(x_0)$.\\
+$f(x_0)$ nazýváme \textbf{hodnotou funkce \textit{f}} v \textbf{bodě $x_0$}.\\
+
+\subsection*{Graf funkce}
+\textbf{Graf funkce} v soustavě souřadnic $O_xy$ je množina všech bodů $[x,f(x)]$ kde $ x \in D_f $. \\
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% init-xy
+\draw[blue, line width = 0.50mm]   plot[smooth,domain=-1.15:3.15] (\x, {\x*(\x-2)});
+\end{tikzpicture}
+\caption{Spojitý graf $y=x^2-2x$}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% discrete points
+\draw[]
+
+\end{tikzpicture}
+\caption{Diskrétní graf}
+\end{figure}
+
 \section{Kvadratická funkce a její vlastnosti}
 \section{Mocninná a lomená funkce a její vlastnosti}
 \section{Exponenciální a logaritmická funkce}
