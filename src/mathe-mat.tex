@@ -1,7 +1,8 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[czech]{babel}
 \usepackage{amsmath, amssymb}
-\usepackage{tikz,pgfplots}
+\usepackage{tikz}
+\usepackage{pgfplots}
 \usepackage{float}
 \usepackage{hyperref}
 \usetikzlibrary{patterns}
@@ -898,14 +899,114 @@ $f(x_0)$ nazýváme \textbf{hodnotou funkce \textit{f}} v \textbf{bodě $x_0$}.\
 \draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
 \draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
 %% discrete points
-\draw[]
+\filldraw [red] (-2,-1) circle (3pt);
+\filldraw [red] (-1,1) circle (3pt);
+\filldraw [red] (1,-1) circle (3pt);
+\filldraw [red] (1.75,2) circle (3pt);
+\filldraw [red] (3,0) circle (3pt);
 
 \end{tikzpicture}
 \caption{Diskrétní graf}
 \end{figure}
 
+\textbf{Maximální definiční obor} je množina všech reálných čísel $x_0$ pro které je možné z předpisu určit funkční hodnotu $f(x_0)$.\\
+\textbf{Obor hodnot} $H_f$ funkce \textit{f} je množina všech hodnot \textit{y} ke kterým existuje alespoň jedno $x \in D_f$ tak, že $y=f(x)$. \\
+\textbf{Průsečíky s osami}:
+\begin{itemize}
+\item s osou x: $P_x[x_0,0]$ - může jich být více
+\item s osou y: $P_y[0,y_0]$ - maximálně jeden
+\end{itemize}
+
+\subsection*{Lineární funkce}
+\textbf{Lineární funkce} je funkce s předpisem $f: y = ax+b$. Jejím grafem je přímka (pro $D_f = \mathbb{R}$).\\
+Je-li $a=0$, je to \textbf{konstantní funkce}.\\
+Je-li $a \neq 0 \land b = 0$ je to \textbf{přímá úměra}.\\
+Máme-li z grafu/tabulky určit předpis, musíme znát 2 její různé body, které dosadíme do předpisu $y=ax+b$.\\
+Často se setkáváme s grafem \textbf{po částech lineární funkce}. Její předpis: \\
+
+\begin{equation}
+f : y = 
+\begin{cases}
+2x+ 3, x \in \langle -2;-1 \rangle \\
+x+2, x \in \langle -1; 0 \rangle \\
+-x+2, x \in \langle 0; \frac{3}{2} \rangle
+\end{cases}
+\end{equation}
+
+\subsection*{Vlastnosti funkcí}
+\begin{itemize}
+\item \textbf{rostoucí} - pro $x_1,x_2 \in D_f$ platí: jestliže $x_1 < x_2$, pak $f(x_1)<f(x_2)$
+\item \textbf{klesající} - pro $x_1,x_2 \in D_f$ platí: jestliže $x_1 < x_2$, pak $f(x_1)>f(x_2)$
+\item \textbf{nerostoucí} - pro $x_1,x_2 \in D_f$ platí: jestliže $x_1 < x_2$, pak $f(x_1) \geq f(x_2)$
+\item \textbf{neklesající} - pro $x_1,x_2 \in D_f$ platí: jestliže $x_1 < x_2$, pak $f(x_1) \leq f(x_2)$
+\end{itemize}
+Každá rostoucí nebo klesající funkce je \textbf{prostá}.\\
+Funkce může též být (ne)rostoucí/klesající na určitém intervalu.\\
+Funkce \textit{f} je:
+\begin{itemize}
+\item \textbf{sudá}, právě když pro každé $x \in D_f$ platí: $f(-x)=f(x)$; souměrná podle osy y
+\item \textbf{lichá}, prácě když pro každé $x \in D_f$ platí: $f(-x)=-f(x)$; souměrná podle počátku soustavy
+\end{itemize}
+
+\subsection*{Inverzní funkce}
+\textbf{Inverzní funkcí} $f^{-1}$ k funkci \textit{f} získámé tak, že v předpisu zaměníme navzájem proměnné.
+
 \section{Kvadratická funkce a její vlastnosti}
+\textbf{Kvadratická funkce} má obecný předpis $y=ax^2+bx+c; a \neq 0$. Jejím grafem je \textbf{parabola}.\\
+Funkce se nazývá:
+\begin{itemize}
+\item \textbf{zdola omezená}, právě když existuje reálné číslo \textit{d} takové, pro $x \in D_f$ platí: $f(x) \geq d$
+\item \textbf{shora omezená}, právě když existuje reálné číslo \textit{h} takové, pro $x \in D_f$ platí: $f(x) \leq h$
+\item \textbf{omezená}, právě když je shora i zdola omezená
+\end{itemize}
+
+Předpis kvadratické funkce můžeme též vyjádřit ve \textbf{vrcholovém tvaru} $y=a(x-m)^2+n; a \neq 0$ kde lze určit souřadnice vrcholu $V[m,n]$.
+
 \section{Mocninná a lomená funkce a její vlastnosti}
+\subsection*{Lineárně lomená funkce}
+\textbf{Lineárně lomená funkce} má obecný předpis $y=\frac{ax+b}{cx+d}$. Jejím grafem je \textbf{hyperbola}.\\
+Nejjednoduší předpis LLF je $f:y=\frac{1}{x}; D_f=\mathbb{R} \setminus \{0\}$ (je to nepřímá úměrnost), střed hyperboly je v bodě $[0;0]$, osy x,y jsou asymptoty hyperboly.\\
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% 
+\end{tikzpicture}
+\caption{$y=\frac{1}{x}$}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% 
+\end{tikzpicture}
+\caption{$y=\frac{2}{x}$}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+%% init-xy
+\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
+\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
+%% 
+\end{tikzpicture}
+\caption{$y=-\frac{1}{x}$}
+\end{figure}
+
+Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kde $[m;n]$ jsou souřadnice středu hyperboly (průsečík asymptot) a \textit{a} je její koeficient. Obecný tvar na středový převedeme vydělením.
+
+
+
 \section{Exponenciální a logaritmická funkce}
 \section{Goniometrické funkce}
 \section{Množiny bodů dané vlastnosti}

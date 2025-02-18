@@ -7,25 +7,25 @@
 \contentsline {section}{\numberline {6}Kvadratická rovnice a nerovnice}{26}{section.6}%
 \contentsline {section}{\numberline {7}Lineární funkce a její vlastnosti}{29}{section.7}%
 \contentsline {section}{\numberline {8}Kvadratická funkce a její vlastnosti}{31}{section.8}%
-\contentsline {section}{\numberline {9}Mocninná a lomená funkce a její vlastnosti}{31}{section.9}%
-\contentsline {section}{\numberline {10}Exponenciální a logaritmická funkce}{31}{section.10}%
-\contentsline {section}{\numberline {11}Goniometrické funkce}{31}{section.11}%
-\contentsline {section}{\numberline {12}Množiny bodů dané vlastnosti}{31}{section.12}%
-\contentsline {section}{\numberline {13}Konstrukce trojúhelníků a čtyřúhelníků}{31}{section.13}%
-\contentsline {section}{\numberline {14}Shodná zobrazení}{31}{section.14}%
-\contentsline {section}{\numberline {15}Podobná zobrazení}{31}{section.15}%
-\contentsline {section}{\numberline {16}Pythagorova a Eukleidovy věty}{31}{section.16}%
-\contentsline {section}{\numberline {17}Trigonometrie obecného trojúhelníku}{31}{section.17}%
-\contentsline {section}{\numberline {18}Stereometrie – polohové vlastnosti}{31}{section.18}%
-\contentsline {section}{\numberline {19}Stereometrie – metrické vlastnosti}{31}{section.19}%
-\contentsline {section}{\numberline {20}Stereometrie – objem a povrch těles}{31}{section.20}%
-\contentsline {section}{\numberline {21}Analytická geometrie – body a vektory}{31}{section.21}%
-\contentsline {section}{\numberline {22}Analytická geometrie – přímka a polorovina v E2}{31}{section.22}%
-\contentsline {section}{\numberline {23}Analytická geometrie – přímka a rovina v E3}{31}{section.23}%
-\contentsline {section}{\numberline {24}Analytická geometrie – kuželosečky}{31}{section.24}%
-\contentsline {section}{\numberline {25}Kombinatorika}{31}{section.25}%
-\contentsline {section}{\numberline {26}Pravděpodobnost}{31}{section.26}%
-\contentsline {section}{\numberline {27}Statistika}{31}{section.27}%
-\contentsline {section}{\numberline {28}Posloupnosti}{31}{section.28}%
-\contentsline {section}{\numberline {29}Limita posloupnosti a nekonečná geometrická řada}{31}{section.29}%
-\contentsline {section}{\numberline {30}Limita a derivace funkce}{31}{section.30}%
+\contentsline {section}{\numberline {9}Mocninná a lomená funkce a její vlastnosti}{32}{section.9}%
+\contentsline {section}{\numberline {10}Exponenciální a logaritmická funkce}{35}{section.10}%
+\contentsline {section}{\numberline {11}Goniometrické funkce}{35}{section.11}%
+\contentsline {section}{\numberline {12}Množiny bodů dané vlastnosti}{35}{section.12}%
+\contentsline {section}{\numberline {13}Konstrukce trojúhelníků a čtyřúhelníků}{35}{section.13}%
+\contentsline {section}{\numberline {14}Shodná zobrazení}{35}{section.14}%
+\contentsline {section}{\numberline {15}Podobná zobrazení}{35}{section.15}%
+\contentsline {section}{\numberline {16}Pythagorova a Eukleidovy věty}{35}{section.16}%
+\contentsline {section}{\numberline {17}Trigonometrie obecného trojúhelníku}{35}{section.17}%
+\contentsline {section}{\numberline {18}Stereometrie – polohové vlastnosti}{35}{section.18}%
+\contentsline {section}{\numberline {19}Stereometrie – metrické vlastnosti}{35}{section.19}%
+\contentsline {section}{\numberline {20}Stereometrie – objem a povrch těles}{35}{section.20}%
+\contentsline {section}{\numberline {21}Analytická geometrie – body a vektory}{35}{section.21}%
+\contentsline {section}{\numberline {22}Analytická geometrie – přímka a polorovina v E2}{35}{section.22}%
+\contentsline {section}{\numberline {23}Analytická geometrie – přímka a rovina v E3}{35}{section.23}%
+\contentsline {section}{\numberline {24}Analytická geometrie – kuželosečky}{35}{section.24}%
+\contentsline {section}{\numberline {25}Kombinatorika}{35}{section.25}%
+\contentsline {section}{\numberline {26}Pravděpodobnost}{35}{section.26}%
+\contentsline {section}{\numberline {27}Statistika}{35}{section.27}%
+\contentsline {section}{\numberline {28}Posloupnosti}{35}{section.28}%
+\contentsline {section}{\numberline {29}Limita posloupnosti a nekonečná geometrická řada}{35}{section.29}%
+\contentsline {section}{\numberline {30}Limita a derivace funkce}{35}{section.30}%
