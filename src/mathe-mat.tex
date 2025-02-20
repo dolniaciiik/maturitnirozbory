@@ -5,6 +5,7 @@
 \usepackage{pgfplots}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage{subcaption}
 \usetikzlibrary{patterns}
 \floatstyle{boxed} 
 \restylefloat{figure}
@@ -561,6 +562,7 @@ I rovnici ve tvaru $|ax+b|=|cx+d|$ lze řešit touto rychlou metodou: $ax+b = cx
 Řešíme obdobně jako rovnici s absolutní hodnotou. Z argumentů určíme NB a řešíme nerovnice nahrezené dle definice. Množina řešení je sjednocení množin každého z případů.\\
 
 \begin{center}
+$|x+3|+3x<11$\\
 \begin{tabular}{| c | c | c |}
 \hline
 $ x \in $ & $ (-\infty; 1 \rangle $ & $ \langle 1; + \infty) $\\
@@ -970,44 +972,342 @@ Nejjednoduší předpis LLF je $f:y=\frac{1}{x}; D_f=\mathbb{R} \setminus \{0\}$
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-%% init-xy
-\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
-\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
-\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
-%% 
+  \begin{axis}[
+    axis lines = middle,
+    xlabel = $x$,
+    ylabel = $y$,
+    xmin=-5, xmax=5,
+    ymin=-5, ymax=5,
+    samples=100,
+    domain=-5:-0.2,
+    restrict y to domain=-5:5
+    axis background/.style={draw=black, thick}
+  ]
+    % Plot y = 1/x
+    \addplot[blue, thick] {1/x};
+    \addplot[domain=0.2:5, samples=100, thick, blue] {1/x};
+
+    % Vertical asymptote at x = 0
+    \addplot[dashed, red] coordinates {(0,-5) (0,5)};
+    \addplot[dashed, red] coordinates {(-5,0) (5,0)};
+
+    % Draw vertical dashed lines at each integer x
+    \foreach \x in {-4,-3,-2,-1,1,2,3,4} {
+      \addplot[dashed, gray] coordinates {(\x,-5) (\x,5)};
+    }
+	
+    % Draw horizontal dashed lines at each integer y
+    \foreach \y in {-4,-3,-2,-1,1,2,3,4} {
+      \addplot[dashed, gray] coordinates {(-5,\y) (5,\y)};
+    }
+
+  \end{axis}
 \end{tikzpicture}
 \caption{$y=\frac{1}{x}$}
 \end{figure}
 
+%y=2/x
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-%% init-xy
-\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
-\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
-\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
-%% 
+  \begin{axis}[
+    axis lines = middle,
+    xlabel = $x$,
+    ylabel = $y$,
+    xmin=-5, xmax=5,
+    ymin=-5, ymax=5,
+    samples=100,
+    domain=-5:-0.2,
+    restrict y to domain=-5:5
+    axis background/.style={draw=black, thick}
+  ]
+    % Plot y = 2/x
+    \addplot[blue, thick] {2/x};
+    \addplot[domain=0.2:5, samples=100, thick, blue] {2/x};
+
+    % Vertical asymptote at x = 0
+    \addplot[dashed, red] coordinates {(0,-5) (0,5)};
+    \addplot[dashed, red] coordinates {(-5,0) (5,0)};
+
+    % Draw vertical dashed lines at each integer x
+    \foreach \x in {-4,-3,-2,-1,1,2,3,4} {
+      \addplot[dashed, gray] coordinates {(\x,-5) (\x,5)};
+    }
+	
+    % Draw horizontal dashed lines at each integer y
+    \foreach \y in {-4,-3,-2,-1,1,2,3,4} {
+      \addplot[dashed, gray] coordinates {(-5,\y) (5,\y)};
+    }
+
+  \end{axis}
 \end{tikzpicture}
 \caption{$y=\frac{2}{x}$}
 \end{figure}
 
+%y=-1/x
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-%% init-xy
-\draw[help lines, color=gray!30, dashed] (-3.5,-3.5) grid (3.5,3.5);
-\draw[->,ultra thick] (-3.5,0)--(3.5,0) node[right]{$x$};
-\draw[->,ultra thick] (0,-3.5)--(0,3.5) node[above]{$y$};
-%% 
+  \begin{axis}[
+    axis lines = middle,
+    xlabel = $x$,
+    ylabel = $y$,
+    xmin=-5, xmax=5,
+    ymin=-5, ymax=5,
+    samples=100,
+    domain=-5:-0.2,
+    restrict y to domain=-5:5
+    axis background/.style={draw=black, thick}
+  ]
+    % Plot y = -1/x
+    \addplot[blue, thick] {-1/x};
+    \addplot[domain=0.2:5, samples=100, thick, blue] {-1/x};
+
+    % Vertical asymptote at x = 0
+    \addplot[dashed, red] coordinates {(0,-5) (0,5)};
+    \addplot[dashed, red] coordinates {(-5,0) (5,0)};
+
+    % Draw vertical dashed lines at each integer x
+    \foreach \x in {-4,-3,-2,-1,1,2,3,4} {
+      \addplot[dashed, gray] coordinates {(\x,-5) (\x,5)};
+    }
+	
+    % Draw horizontal dashed lines at each integer y
+    \foreach \y in {-4,-3,-2,-1,1,2,3,4} {
+      \addplot[dashed, gray] coordinates {(-5,\y) (5,\y)};
+    }
+  \end{axis}
 \end{tikzpicture}
 \caption{$y=-\frac{1}{x}$}
 \end{figure}
 
 Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kde $[m;n]$ jsou souřadnice středu hyperboly (průsečík asymptot) a \textit{a} je její koeficient. Obecný tvar na středový převedeme vydělením.
 
+\textbf{Mocninná funkce} je funkce s předpisem $y=x^n$. 
 
+\begin{figure}[H]
+    \centering
+    % First row, first graph
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                samples=100, domain=-5:-0.2, restrict y to domain=-5:5,
+                width=7cm, height=7cm,
+                clip=false, tick style={black, thick}
+            ]
+                \addplot[blue, thick] {1};
+                \addplot[domain=0.2:5, samples=100, thick, blue] {1};
+	      \node[circle, draw=red, thick, fill=white, scale=0.5] at (axis cs:0,1) {};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = 1$}
+    \end{minipage}%
+    %
+    % First row, second graph
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=7cm, height=7cm
+            ]
+                \addplot[blue, thick] {x};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = x$}
+    \end{minipage}%
+
+    % New line (second row)
+    \vspace{1cm}
+
+    % Second row, first graph
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=7cm, height=7cm
+            ]
+	     \addplot[domain=-5:5, samples=200, thick, blue] {x^2};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = x^2$}
+    \end{minipage}%
+    %
+    % Second row, second graph
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=7cm, height=7cm,
+            ]
+	     \addplot[domain=-5:5, samples=200, thick, blue] {x^3};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = x^3$}
+    \end{minipage}%
+
+% New line (third row)
+\vspace{1cm}
+
+% third row, first graph
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=6cm, height=6cm,
+            ]
+	     \addplot[domain=-5:5, samples=200, thick, blue] {x^4};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = x^4$}
+    \end{minipage}%
+
+% third row, second graph
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=6cm, height=6cm,
+            ]
+	     \addplot[domain=-3:3, samples=200, thick, blue] {x^5};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = x^5$}
+    \end{minipage}%
+\end{figure}
+\newpage
+%----------------------------------------------------------------------------------
+
+\begin{figure}[H]
+    \centering
+
+    % First graph
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=5.5cm, height=5.5cm,
+            ]
+                \addplot[domain=-5:-0.2, samples=200, thick, blue] {1/x};
+                \addplot[domain=0.2:5, samples=200, thick, blue] {1/x};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = \frac{1}{x}$}
+    \end{minipage}%
+    \hspace{2mm} % Space between graphs
+
+    % Second graph
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=5.5cm, height=5.5cm,
+            ]
+                \addplot[domain=-5:-0.2, samples=200, thick, blue] {1/x^2};
+                \addplot[domain=0.2:5, samples=200, thick, blue] {1/x^2};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = \frac{1}{x^2}$}
+    \end{minipage}%
+    \hspace{2mm} % Space between graphs
+
+    % Third graph
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=5.5cm, height=5.5cm,
+            ]
+                \addplot[domain=-5:-0.2, samples=200, thick, blue] {1/x^3};
+                \addplot[domain=0.2:5, samples=200, thick, blue] {1/x^3};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$y = \frac{1}{x^3}$}
+    \end{minipage}%
+
+\end{figure}
+
+
+\textbf{Dovětek}
+Mocninnou funkci s předpisem $y=x^n$ lze definovat i pro $n \in \mathbb{Q}$.\\
+Např. $n=\frac{1}{2}$ bude mít předpis $y=\sqrt{x}$ což je inverzní funkce k kvadratické funkci. Inverzní funkci lze stanovit pouze k prosté funkci, musíme tedy
+stanovit $D_f$, na kterém je původní funkce prostá, v tomto případě je $D_f = \mathbb{R}^{+}_{0}$.\\
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=7cm, height=7cm,
+            ]
+	     \addplot[domain=0:5, samples=100, thick, blue] {sqrt(x)};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{$y = \sqrt{x}$}
+\end{figure}
 
 \section{Exponenciální a logaritmická funkce}
+
+\subsection*{Exponenciální funkce}
+
 \section{Goniometrické funkce}
 \section{Množiny bodů dané vlastnosti}
 \section{Konstrukce trojúhelníků a čtyřúhelníků}
