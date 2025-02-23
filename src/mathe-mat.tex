@@ -1082,7 +1082,9 @@ Nejjednoduší předpis LLF je $f:y=\frac{1}{x}; D_f=\mathbb{R} \setminus \{0\}$
 \end{figure}
 
 Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kde $[m;n]$ jsou souřadnice středu hyperboly (průsečík asymptot) a \textit{a} je její koeficient. Obecný tvar na středový převedeme vydělením.
+\pagebreak
 
+\subsection*{Mocninná funkce}
 \textbf{Mocninná funkce} je funkce s předpisem $y=x^n$. 
 
 \begin{figure}[H]
@@ -1157,12 +1159,14 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
         \end{tikzpicture}
         \subcaption{$y = x^3$}
     \end{minipage}%
+\end{figure}
 
+\begin{figure}
+\centering
 % New line (third row)
 \vspace{1cm}
-
 % third row, first graph
-    \begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.32\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1178,7 +1182,7 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
     \end{minipage}%
 
 % third row, second graph
-    \begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.32\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1193,7 +1197,6 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
         \subcaption{$y = x^5$}
     \end{minipage}%
 \end{figure}
-\newpage
 %----------------------------------------------------------------------------------
 
 \begin{figure}[H]
@@ -1307,6 +1310,37 @@ stanovit $D_f$, na kterém je původní funkce prostá, v tomto případě je $D
 \section{Exponenciální a logaritmická funkce}
 
 \subsection*{Exponenciální funkce}
+\textbf{Exponenciální funkce} o základu $a\in (0;1) \cup (1;+\infty)$ je funkce s předpisem $y=a^x$ a křivkou exponenciálou.\\
+Funkce je pro $a \in (0;1)$ klesající, pro $a \in (1;+\infty)$ roustoucí. Maximální definiční obor je $\mathbb{R}$ a obor hodnot $H_f = (0;+\infty)$. Osa x je asymptotou. Je to funkce prostá.
+
+\begin{figure}[H]
+\centering
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=5.5cm, height=5.5cm,
+            ]
+                \addplot[domain=-5:5, samples=200, thick, blue] {0.5^x};
+	     \addplot[domain=-5:5, samples=200, thick, green] {2^x};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{b: $y = \frac{1}{2}^x$, g: $y=2^x$}
+    \end{minipage}%
+\end{figure}
 
 \section{Goniometrické funkce}
 \section{Množiny bodů dané vlastnosti}
