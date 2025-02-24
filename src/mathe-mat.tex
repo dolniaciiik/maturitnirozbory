@@ -1104,6 +1104,15 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
                 \addplot[blue, thick] {1};
                 \addplot[domain=0.2:5, samples=100, thick, blue] {1};
 	      \node[circle, draw=red, thick, fill=white, scale=0.5] at (axis cs:0,1) {};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \subcaption{$y = 1$}
@@ -1120,6 +1129,15 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
                 width=7cm, height=7cm
             ]
                 \addplot[blue, thick] {x};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \subcaption{$y = x$}
@@ -1139,6 +1157,15 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
                 width=7cm, height=7cm
             ]
 	     \addplot[domain=-5:5, samples=200, thick, blue] {x^2};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \subcaption{$y = x^2$}
@@ -1155,6 +1182,15 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
                 width=7cm, height=7cm,
             ]
 	     \addplot[domain=-5:5, samples=200, thick, blue] {x^3};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \subcaption{$y = x^3$}
@@ -1166,7 +1202,7 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
 % New line (third row)
 \vspace{1cm}
 % third row, first graph
-    \begin{minipage}{0.32\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1176,13 +1212,22 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
                 width=6cm, height=6cm,
             ]
 	     \addplot[domain=-5:5, samples=200, thick, blue] {x^4};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \subcaption{$y = x^4$}
     \end{minipage}%
-
+\hfill
 % third row, second graph
-    \begin{minipage}{0.32\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1192,6 +1237,15 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
                 width=6cm, height=6cm,
             ]
 	     \addplot[domain=-3:3, samples=200, thick, blue] {x^5};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \subcaption{$y = x^5$}
@@ -1203,7 +1257,7 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
     \centering
 
     % First graph
-    \begin{minipage}{0.32\textwidth}
+    \begin{minipage}{0.48\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1228,10 +1282,10 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
         \end{tikzpicture}
         \subcaption{$y = \frac{1}{x}$}
     \end{minipage}%
-    \hspace{2mm} % Space between graphs
-
+  
+\hfill
     % Second graph
-    \begin{minipage}{0.32\textwidth}
+    \begin{minipage}{0.48\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1256,10 +1310,10 @@ Předpis LLF může být i ve \textbf{středovém tvaru} $y=\frac{a}{x-m}+n$, kd
         \end{tikzpicture}
         \subcaption{$y = \frac{1}{x^2}$}
     \end{minipage}%
-    \hspace{2mm} % Space between graphs
-
+ 
+\hfill
     % Third graph
-    \begin{minipage}{0.32\textwidth}
+    \begin{minipage}{0.48\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1302,6 +1356,15 @@ stanovit $D_f$, na kterém je původní funkce prostá, v tomto případě je $D
                 width=7cm, height=7cm,
             ]
 	     \addplot[domain=0:5, samples=100, thick, blue] {sqrt(x)};
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
             \end{axis}
         \end{tikzpicture}
         \caption{$y = \sqrt{x}$}
@@ -1315,7 +1378,7 @@ Funkce je pro $a \in (0;1)$ klesající, pro $a \in (1;+\infty)$ roustoucí. Max
 
 \begin{figure}[H]
 \centering
-    \begin{minipage}{0.32\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
         \begin{tikzpicture}
             \begin{axis}[
@@ -1325,6 +1388,29 @@ Funkce je pro $a \in (0;1)$ klesající, pro $a \in (1;+\infty)$ roustoucí. Max
                 width=5.5cm, height=5.5cm,
             ]
                 \addplot[domain=-5:5, samples=200, thick, blue] {0.5^x};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f: y = \frac{1}{2}^x$}
+    \end{minipage}%
+\begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=5.5cm, height=5.5cm,
+            ]
 	     \addplot[domain=-5:5, samples=200, thick, green] {2^x};
 
                 % Vertical dashed lines
@@ -1338,8 +1424,123 @@ Funkce je pro $a \in (0;1)$ klesající, pro $a \in (1;+\infty)$ roustoucí. Max
                 }
             \end{axis}
         \end{tikzpicture}
-        \subcaption{b: $y = \frac{1}{2}^x$, g: $y=2^x$}
+        \subcaption{$f: y=2^x$}
     \end{minipage}%
+\end{figure}
+
+\subsection*{Exponenciální rovnice}
+\subsubsection*{Exponenciální rovnice prvního typu}
+ER je rovnice, kde se neznámá vyskytuje v exponentu. \textbf{První typ} ER jsou rovnice, které po užití vzorců (\hyperlink{page.12}{str. 12}) a ekvivalentních úprav
+mají na obou stranách jednočlen. Řešíme převedením na mocninu se stejným základem a porovnáváme exponenty.\\
+Př.:\\
+\[
+\begin{aligned}
+3^{x+2}+3^{x-1}=28\\
+3^x \cdot 3^2 + 3^x \cdot 3^-1=28\\
+3^x (9+\frac{1}{3})=28\\
+3^x \cdot \frac{28}{3}=28 | : \frac{28}{3}\\
+3^x = 3^1\\
+x = 1\\
+K = \{1\}
+\end{aligned}
+\]
+
+\subsubsection*{Exponenciální rovnice druhého typu}
+Druhým typem jsou rovnice, které nelze upravit tak, aby na obou stranách byl jednočlen. Musíme zavést substituci.\\
+Př.:\\
+\[
+\begin{aligned}
+4^x - 9 \cdot 2^x + 8=0\\
+[y=2^x]\\
+(2^x)^2 - 9 \cdot 2^x +8 =0\\
+y^2-9y+8=0\\
+(y-1)(y-8)=0\\
+y = 1 \lor y = 8
+\end{aligned}
+\]
+\begin{center}
+! Musíme dosadit zpět do substituce!\\
+\begin{tabular}{ c c }
+i) & ii)\\
+$2^x = 1$ & $2^x = 8$\\
+$2^x = 2^0$ & $2^x = 2^3$\\
+$x=0$ & $x=3$\\
+\end{tabular}\\
+$K=\{0;3\}$
+\end{center}
+
+\subsubsection*{Exponenciální nerovnice}
+
+\subsection*{Logaritmická funkce}
+\subsubsection*{Logaritmus}
+\textbf{Logaritmus} z kladného čísla \textit{a} při základu \textit{z} je roven číslu \textit{b} zapisujeme $\log_z a = b$ právě když platí $z^b=a$.\\
+Základ je vždy z intervalu $(0;1) \cup (1;+\infty)$, je-li $z=10$ pak píšeme jen $\log a$, je-li $z=e$ pak píšeme jen $\ln a$.\\
+
+Pravidla pro počítání s logaritmy:
+\begin{itemize}
+\item $\log_z 1 = 0$
+\item $\log_z ab = \log_z a + \log_z b$
+\item $\log_z \frac{a}{b} = \log_z a - \log_z b$
+\item $\log_z a^n = n \log_z a$
+\end{itemize}
+
+\subsubsection*{Logaritmická funkce}
+\textbf{Logaritmická funkce} $f: y = \log_z x, z \in (0;1) \cup (1;+\infty)$ s definičním oborem $D_f = (0;+\infty)$ a oborem hodnot $H_f = \mathbb{R}$ je inverzní 
+funkce k exponenciální funkci $y=z^x$.\\
+Logaritmická funkce je pro $a \in (0;1)$ klesající a pro $a \in (1;+\infty)$ rostoucí.
+
+\begin{figure}[H]
+\centering
+
+    \begin{minipage}{0.5\textwidth}
+	\centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=6cm, height=6cm,
+            ]
+	     \addplot[domain=0:5, samples=200, thick, green] {log10(x) / log10(0.5)};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f : y=\log_{0.5} x$}
+    \end{minipage}%
+\hfill
+    \begin{minipage}{0.5\textwidth}
+	\centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+                xmin=-5, xmax=5, ymin=-5, ymax=5,
+                width=6cm, height=6cm,
+            ]
+                \addplot[domain=0:5, samples=200, thick, blue] {log2(x)};
+
+                % Vertical dashed lines
+                \foreach \x in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(\x,-4) (\x,4)};
+                }
+
+                % Horizontal dashed lines
+                \foreach \y in {-3,-2,-1,1,2,3} {
+                    \addplot[dashed, gray] coordinates {(-4,\y) (4,\y)};
+                }
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f: y = \log_2 x$}
+    \end{minipage}
 \end{figure}
 
 \section{Goniometrické funkce}

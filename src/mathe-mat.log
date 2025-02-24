@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  23 FEB 2025 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  24 FEB 2025 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,26 +1030,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 969--971
 
  []
 
-[31] [32] [33]
-Overfull \hbox (1.29904pt too wide) in paragraph at lines 1180--1181
- [][] 
- []
+[31] [32] [33] [34]
+Overfull \vbox (10.4968pt too high) has occurred while \output is active []
 
 
-Overfull \hbox (1.29904pt too wide) in paragraph at lines 1196--1197
- [][] 
- []
-
-[34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1291--1308
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1371
 
  []
 
-[36] [37] [38]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1436
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1478
+
+ []
+
+[37]
+NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+[38] [39]
 Overfull \vbox (141.66693pt too high) has occurred while \output is active []
 
 
-[39] (./mathe-mat.aux)
+[40] (./mathe-mat.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1058,13 +1072,13 @@ Package rerunfilecheck Info: File `mathe-mat.out' has not changed.
 (rerunfilecheck)             Checksum: FE69FC0F97BC89F0A0E6AE08E77E5796;6141.
  ) 
 Here is how much of TeX's memory you used:
- 33654 strings out of 474103
- 780596 string characters out of 5747481
- 1975496 words of memory out of 5000000
- 55386 multiletter control sequences out of 15000+600000
+ 33698 strings out of 474103
+ 781437 string characters out of 5747481
+ 1981496 words of memory out of 5000000
+ 55419 multiletter control sequences out of 15000+600000
  570997 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,107p,723b,2138s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,107p,723b,2139s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2024/texmf-
@@ -1082,10 +1096,10 @@ nts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mathe-mat.pdf (39 pages, 318025 bytes).
+Output written on mathe-mat.pdf (40 pages, 328523 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
- 146 named destinations out of 1000 (max. 500000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 157 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
