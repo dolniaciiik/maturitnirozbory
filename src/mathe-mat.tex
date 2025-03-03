@@ -6,6 +6,8 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{ {./ryska} }
 \usetikzlibrary{patterns}
 \floatstyle{boxed} 
 \restylefloat{figure}
@@ -1470,7 +1472,18 @@ $K=\{0;3\}$
 \end{center}
 
 \subsubsection*{Exponenciální nerovnice}
-
+%a^r < a^s \lor a^r > a ^s \lor a^r \qeg a^s \lor a^r \leq a^s
+Jednoduché exponenciální nerovnice lze upravit tak, aby měly jeden z tvarů:\\ $ a^r < a^s \lor a^r > a^s \lor a^r \geq a^s \lor a^r \leq a^s $. Záleží jestli je funkce $y=a^x$ klesající nebo rostoucí,
+je-li $a>1$ pak neměníme znaménko. Pokud je $0<a<1$ pak se znaménko nerovnosti mění.\\
+\[
+\begin{aligned}
+\biggl(\frac{1}{7}\biggr)^{3x+2} \leq 1\\
+\biggl(\frac{1}{7}\biggr)^{3x+2} \leq \biggl(\frac{1}{7}\biggr)^0\\
+3x+2 \mathbf{\geq} 0\\
+x \geq -\frac{2}{3}\\
+K=\biggl(-\infty;\frac{1}{2}\biggr)
+\end{aligned}
+\]
 \subsection*{Logaritmická funkce}
 \subsubsection*{Logaritmus}
 \textbf{Logaritmus} z kladného čísla \textit{a} při základu \textit{z} je roven číslu \textit{b} zapisujeme $\log_z a = b$ právě když platí $z^b=a$.\\
@@ -1543,8 +1556,260 @@ Logaritmická funkce je pro $a \in (0;1)$ klesající a pro $a \in (1;+\infty)$ 
     \end{minipage}
 \end{figure}
 
+\subsubsection*{Logaritmické rovnice}
+V logaritmické rovnici se nachazí neznámá v logaritmu. Musíme vždy stanovit definiční obor rovnice. Řešíme převedením na logaritmus o stejném základu a porovnáme argumenty. Není-li to možné,
+zavádíme substituci.\\
+
+\[\begin{aligned}
+\log (x-3) - \log x = -1\\
+\text{Podmínky: } x > 3 \land x > 0 \imply D_R = (3;+\infty)\\
+\log \frac{x-3}{3} = \log 0.1\\
+\frac{x-3}{3} = \frac{1}{10}\\
+x-3 = \frac{1}{10}x\\
+\frac{9}{10}x=3\\
+x = \frac{10}{3}\\
+K = \biggl\{\frac{10}{3} \biggr\}
+\end{aligned}\]
+\pagebreak
+\[\begin{aligned}
+\log x + \frac{1}{\log x} =2\\
+\text{Podmínky: } x > 0 \land x \neq 1 \imply D_R = \mathbb{R}^+ \setminus \{1\}\\
+[y=\log x]\\
+y+\frac{1}{y}=2 | \cdot y\\
+y^2 - 2y + 1 = 0\\
+y = 1\\
+\log x = 1\\
+x = 10 \in D_R\\
+K = \{10\}
+\end{aligned}\]
+
+\subsubsection*{Logaritmické nerovnice}
+Logaritmické nerovnice řešíme:
+\begin{enumerate}
+\item určíme $D_R$
+\item obě strany převedeme na logaritmus o stejném základu
+\item porovnáváme argumenty, platí změna znaménka při základu z intervalu $(0;1)$
+\end{enumerate}
+
+\[\begin{aligned}
+\log_{0.5} (x+3) \leq \log_{0.2} 2x\\
+\text{Podmínky: }x > 3 \land x > 0 \imply D_N = \mathbb{R}^+\\ 
+x+3 \geq 2x\\
+-x \geq -3\\
+x \leq 3\\
+K = (-\infty;3 \rangle \cap D_N\\
+K = (0;3 \rangle
+\end{aligned}\]
+\pagebreak
 \section{Goniometrické funkce}
+Uvažujme jednotkovou kružnici \textit{k} se středem \textit{S} a poloměrem $r=1 j$, délka takové kružnice je $2 \pi j$.\\
+\textbf{Radián} je středový úhel, příslušící jednotkové kružnici oblouku o délce $1 j$.\\
+
+\subsection*{Sinus}
+V pravoúhlém trojuhleníku definujeme funkci sinus jako poměr délek protilehlé odvěsny ku přeponě. Křivku funkce nazýváme sinusoida.\\
+Funkce $f: y = sin(x)$ je v $Q_1$ a $Q_2$ nezáporná, v $Q_3$ a $Q_4$ je nekladná. Obor hodnot je interval $\langle -1;1 \rangle$.\\
+Funkce sinus je \textbf{periodická} s periodou $2\pi$ $\imply (\forall k \in \mathbb{Z})  sin(x+2k\pi)=sin(x)$.\\
+\begin{figure}[H]    
+	\centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+	     xmin=-0, xmax=7, ymin=-2, ymax=2
+            ]
+                \addplot[smooth,blue,mark=none, domain=0:7,samples=100]{sin(deg(x))};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f: y = sin(x)$}
+\end{figure}
+
+\subsection*{Kosinus}
+Funkce kosinus je v $Q_1$ a $Q_4$ nezáporná, a v $Q_2$ a $Q_3$ nekladná. Obor hodnot je interval $\langle -1;1 \rangle$. Maximální definiční obor $\mathbb{R}$. Perioda je $2\pi$.\\
+Kosinusoida je sinusoida posunutá o $\frac{\pi}{2}$.
+\begin{figure}[H]    
+	\centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+	     xmin=-0, xmax=7, ymin=-2, ymax=2
+            ]
+                \addplot[smooth,blue,mark=none, domain=0:7,samples=100]{cos(deg(x))};
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f: y = cos(x)$}
+\end{figure}
+
+\subsection*{Tangens a kotangens}
+Obor hodnot obou funkcí je $\mathbb{R}$ Funkce jsou periodické s periodou $\pi$. Obě funkce jsou v $Q_1$ nezáporné a v $Q_2$ nekladné.\\
+\begin{figure}[H]    
+	\centering
+\begin{minipage}{0.45\textwidth}
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+	     xmin=-3.14, xmax=3.14, ymin=-2, ymax=2, width=7.5cm, height=8cm, unbounded coords=jump
+            ]
+                \addplot[smooth,blue,mark=none, domain=-1.55:0,samples=100]{tan(deg(x))};
+	     \addplot[smooth,blue,mark=none, domain=-3.14:-1.58,samples=100]{tan(deg(x))};
+	     \addplot[smooth, red, dashed] (-1.56,x);
+	     \addplot[smooth,blue,mark=none, domain=0:1.55,samples=100]{tan(deg(x))};
+	     \addplot[smooth,blue,mark=none, domain=1.58:3.14,samples=100]{tan(deg(x))};
+	     \addplot[smooth, red, dashed] (1.56,x);
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f: y = \tan(x)$}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xlabel = {$x$}, ylabel = {$y$},
+	     xmin=-3.14, xmax=3.14, ymin=-2, ymax=2, width=7.5cm, height=8cm, unbounded coords=jump
+            ]
+              \addplot[smooth,blue,mark=none, domain=-3.12:-0.1, samples=100]{1/tan(deg(x))};
+	    \addplot[smooth,red,dashed] (0, x);
+	   \addplot[smooth,blue,mark=none, domain=0.1:3.13, samples=100]{1/tan(deg(x))};
+
+            \end{axis}
+        \end{tikzpicture}
+        \subcaption{$f: y = \cot(x)$}
+\end{minipage}
+\end{figure}
+
+\subsubsection*{Tangens}
+Funkce není definována v bodech $x=\frac{\pi}{2}+k\pi, k \in \mathbb{Z}$. V grafu jsou to asymptoty.
+
+\subsubsection*{Kotangens}
+Funkce není definována v bodech $x=k\pi, k \in \mathbb{Z}$. V grafu jsou to asymptoty.
+
+\subsection*{Goniometrické vzorce}
+Pozn. najdu je v \textbf{TABULKÁCH}!\\
+\begin{itemize}
+\item $\sin^2x + \cos^2x = 1$ (první goniometrická jednotka)
+\item $\tan x = \frac{\sin x }{\cos x }$
+\item $\tan x \cdot \cot x = 1$
+\item $\sin(x \pm y)=\sin x \cos y \pm \sin y \cos x$
+\item $\cos(x \pm y)= \cos x \cos y \mp \sin x \sin y$
+\item $\sin^2x = 1-\cos^2x \imply |\sin x| = \sqrt{1-\cos^2x}$
+\item $\cot x = \frac{\cos x}{\sin x}$
+\item $\tan x = \frac{1}{\cot x}$
+\item $\sin 2x = 2\sin x \cos x$
+\item $\cos 2x = \cos^2x - \sin^2x $
+\end{itemize}
+
+\pagebreak
+
+\subsection*{Goniometrické rovnice}
+Př.:\\
+
+\begin{align*}
+\sin(2x-\frac{\pi}{6})=\frac{\sqrt{3}}{2}\\
+\sin \text{je kladný v } Q_1 \land Q_2; \sin \frac{\pi}{3}=\frac{\sqrt{3}}{2}\\
+\rule{7cm}{0.4pt}\\
+2x-\frac{\pi}{6}=\frac{\pi}{3}+2k\pi \\
+2x-\frac{\pi}{6}=\frac{2}{3}\pi+2k\pi \\
+\rule{4cm}{0.4pt}\\
+2x = \frac{\pi}{2} + 2k\pi\\
+2x = \frac{5}{6}\pi + 2k\pi\\
+\rule{3.2cm}{0.4pt}\\
+x = \frac{\pi}{4}+k\pi\\
+x = \frac{5}{12}\pi + k\pi\\
+K = \bigcup_{k \in \mathbb{Z}} \{\frac{\pi}{4}+k\pi; \frac{5}{12}\pi + k\pi\}
+\end{align*}
+
+\pagebreak
+
 \section{Množiny bodů dané vlastnosti}
+Množina \textit{M} dané vlastnosti je množina všech bodů roviny, pro kterou platí:
+\begin{itemize}
+\item každý bod množiny \textit{M} má danou vlastnost
+\item každý bod, který má danou vlastnost, patří do množiny \textit{M}
+\end{itemize}
+
+\subsection*{Osa úsečky AB}
+\begin{itemize}
+\item je množina všech bodů, které mají od dvou bodů \textit{A,B} stejnou vzdálenost
+\item je množina všech středů kružnic, které procházejí danými body \textit{A,B}
+\end{itemize}
+
+\includegraphics[scale=0.4]{osausecky1}
+\includegraphics[scale=0.4]{osausecky2}
+$o_{AB}=\{X; |AX|=|BX|\}$
+
+\subsection*{Osa rovnoběžek a, b}
+Resp. osa rovinného pásu\\
+\begin{itemize}
+\item je množina všech bodů, které mají od daných dvou rovnoběžek \textit{a,b} stejnou vzdálenost
+\item je množina středů všech kružnic, které se dotýkají daných rovnoběžek \textit{a,b}
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.47]{osarovnobezek1}
+\end{minipage}%
+\vspace{3cm}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.47]{osarovnobezek2}
+\end{minipage}
+\end{figure}
+
+$o_{ab}=\{X; |Xa|=|Xb|=\frac{1}{2}ab\}$\\
+
+\subsection*{Osy různoběžek}
+\begin{itemize}
+\item je množina všech bodů, které mají od daných různoběžek \textit{a,b} stejnou vzdálenost
+\item (kromě jejich průsečíku) je množina všech středů kružnic, které se dotýkají daných dvou různoběžek \textit{a,b}
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.47]{osaruznobezek1}
+\end{minipage}%
+\vspace{3cm}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.4]{osaruznobezek2}
+\end{minipage}
+\end{figure}
+
+$o_1 \cup o_2 = \{ X; |Xa|= |Xb|\}$\\
+Osy různoběžek jsou na sebe vždy kolmé.
+
+\subsection*{Soustředné kružnice}
+Nechť jsou dány dvě soustředné kružnice $k_1(S,r_1), k_2(S, r_2), r_1 > r_2$.\\
+\textbf{Kružnice} $k(S,r)$ kde $r=\frac{1}{2}(r_1+r_2)$, je množina všech bodů, které mají od daných kružnic stejnou vzdálenost.\\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.47]{soustredne1}
+\end{figure}
+
+\textbf{Dvě kružnice} $k(S, r_1), l(S, r_2)$, kde $r_1=\frac{1}{2}(r_1+r_2), r_2=\frac{1}{2}(r_1-r_2)$ je množina středů kružnic, které se dotýkají daných kružnic. 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.47]{soustredne2}
+\end{figure}
+
+\pagebreak
+
+\subsection*{Ekvidistanty kružnice}
+Nechť je dána kružnice $k(S,r)$ a kladné reálné číslo \textit{d}.\\
+Pro $d < r$ sjednocení kružnic $k_1(S, r+d) \cup k_2(S, r-d)$; pro $d \geq r$ kružnice $k_1(S,r+d)$ je
+\begin{itemize}
+\item množina všech bodů, které mají od dané kružnice \textit{k} vzdálenost \textit{d}
+\item množina středů všech kružnic s poloměrem \textit{d}, které se dotýkají dané kružnice
+\end{itemize}
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.38]{ekvidistantykruznice1}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.4]{ekvidistantykruznice2}
+\end{minipage}
+\end{figure}
+
 \section{Konstrukce trojúhelníků a čtyřúhelníků}
 \section{Shodná zobrazení}
 \section{Podobná zobrazení}
