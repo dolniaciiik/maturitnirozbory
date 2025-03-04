@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  3 MAR 2025 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  4 MAR 2025 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,6 +705,9 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count321
 )
+(c:/texlive/2024/texmf-dist/tex/latex/gensymb/gensymb.sty
+Package: gensymb 2022/10/17 v1.0.2 (KJH)
+)
 (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -722,24 +725,24 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 (./mathe-mat.aux)
 \openout1 = `mathe-mat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -767,22 +770,33 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 21.
+ on input line 23.
 
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 23.
 (./mathe-mat.out) (./mathe-mat.out)
 \@outlinefile=\write4
 \openout4 = `mathe-mat.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Info: Redefining \celsius on input line 23.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 23.
 
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 23.
+Package gensymb Info: Using \Omega for \ohm on input line 23.
+
+Package gensymb Warning: Not defining \micro.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -795,238 +809,238 @@ t.toc [3])
 \openout5 = `mathe-mat.toc'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 52--57
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 [5] [6] [7{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
-Underfull \hbox (badness 10000) in paragraph at lines 167--173
+Underfull \hbox (badness 10000) in paragraph at lines 169--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 204--210
+Underfull \hbox (badness 10000) in paragraph at lines 206--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+Underfull \hbox (badness 10000) in paragraph at lines 214--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--228
+Underfull \hbox (badness 10000) in paragraph at lines 219--230
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Overfull \hbox (2.37772pt too wide) in paragraph at lines 250--251
+Overfull \hbox (2.37772pt too wide) in paragraph at lines 252--253
 \OT1/cmr/bx/n/12 Kr^^Satit lo-men^^Sy v^^Syraz \OT1/cmr/m/n/12 zna-men^^Sa vyd^
 ^Telit ^^Tcitatele i jme-no-va-tele stejn^^Sym ^^Tc^^S^^Pslem. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 293--296
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
 [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 324--339
+Underfull \hbox (badness 10000) in paragraph at lines 326--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Overfull \hbox (3.29294pt too wide) in paragraph at lines 343--353
+Overfull \hbox (3.29294pt too wide) in paragraph at lines 345--355
  [] 
  []
 
 [14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 434--436
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
+Underfull \hbox (badness 10000) in paragraph at lines 444--446
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 479--482
+Underfull \hbox (badness 10000) in paragraph at lines 481--484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--533
+Underfull \hbox (badness 10000) in paragraph at lines 532--535
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 557--559
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
 [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
+Underfull \hbox (badness 10000) in paragraph at lines 601--603
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--651
+Underfull \hbox (badness 10000) in paragraph at lines 649--653
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--666
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--672
 
  []
 
 [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 724--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 760--762
+Underfull \hbox (badness 10000) in paragraph at lines 762--764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--771
+Underfull \hbox (badness 10000) in paragraph at lines 771--773
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--784
+Underfull \hbox (badness 10000) in paragraph at lines 784--786
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 800--802
+Underfull \hbox (badness 10000) in paragraph at lines 802--804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 814--817
+Underfull \hbox (badness 10000) in paragraph at lines 816--819
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 819--822
+Underfull \hbox (badness 10000) in paragraph at lines 821--824
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 848--851
+Underfull \hbox (badness 10000) in paragraph at lines 850--853
 
  []
 
 
-Overfull \hbox (3.1715pt too wide) in paragraph at lines 870--874
+Overfull \hbox (3.1715pt too wide) in paragraph at lines 872--876
 \OT1/cmr/m/n/12 Necht[] jsou d^^Sany nepr^^Sazdn^^Se podmno^^Tziny \OT1/cmr/m/i
 t/12 A,B \OT1/cmr/m/n/12 mno^^Tziny $\U/msb/m/n/12 R$\OT1/cmr/m/n/12 . Funkce \
 OT1/cmr/m/it/12 f \OT1/cmr/m/n/12 na mno^^Tzin^^Te
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 880--882
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 884--896
+Underfull \hbox (badness 10000) in paragraph at lines 886--898
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 925--930
+Underfull \hbox (badness 10000) in paragraph at lines 927--932
 
  []
 
 [30]
-Overfull \hbox (6.4117pt too wide) in paragraph at lines 956--957
+Overfull \hbox (6.4117pt too wide) in paragraph at lines 958--959
 \OT1/cmr/bx/n/12 Inverzn^^S^^P funkc^^S^^P $\OML/cmm/m/it/12 f[]$ \OT1/cmr/m/n/
 12 k funkci \OT1/cmr/m/it/12 f \OT1/cmr/m/n/12 z^^S^^Psk^^Sam^^Se tak, ^^Tze v 
 p^^Tredpisu zam^^Ten^^S^^Pme navz^^Sajem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 971--973
+Underfull \hbox (badness 10000) in paragraph at lines 973--975
 
  []
 
@@ -1035,27 +1049,27 @@ Overfull \vbox (10.4968pt too high) has occurred while \output is active []
 
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1347--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1349--1375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1438
+Underfull \hbox (badness 10000) in paragraph at lines 1437--1440
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1451--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1476--1478
+Underfull \hbox (badness 10000) in paragraph at lines 1478--1480
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1491
+Underfull \hbox (badness 10000) in paragraph at lines 1491--1493
 
  []
 
@@ -1064,57 +1078,57 @@ in y). (see also unbounded coords=jump).
 NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1560--1562
+Underfull \hbox (badness 10000) in paragraph at lines 1562--1564
 
  []
 
 [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1605--1607
+Underfull \hbox (badness 10000) in paragraph at lines 1607--1609
 
  []
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 1623.
+(caption)                outside box or environment on input line 1625.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1623.
+(caption)                outside box or environment on input line 1625.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1611--1626
 
  []
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 1640.
+(caption)                outside box or environment on input line 1642.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1640.
+(caption)                outside box or environment on input line 1642.
 See the caption package documentation for explanation.
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1679
+Underfull \hbox (badness 10000) in paragraph at lines 1646--1681
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1688--1689
+Underfull \hbox (badness 10000) in paragraph at lines 1690--1691
 
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1705--1706
+Underfull \hbox (badness 10000) in paragraph at lines 1707--1708
 
  []
 
 [44]
-Overfull \hbox (2.13806pt too wide) in paragraph at lines 1733--1734
+Overfull \hbox (2.13806pt too wide) in paragraph at lines 1735--1736
 []\OT1/cmr/m/n/12 je mno^^Tzina v^^Tsech bod^^Wu, kter^^Se maj^^S^^P od dvou bo
 d^^Wu \OT1/cmr/m/it/12 A,B \OT1/cmr/m/n/12 stej-nou vzd^^Salenost 
  []
@@ -1122,70 +1136,70 @@ d^^Wu \OT1/cmr/m/it/12 A,B \OT1/cmr/m/n/12 stej-nou vzd^^Salenost
 <./ryska/osausecky1.png, id=467, 1002.74625pt x 643.6547pt>
 File: ./ryska/osausecky1.png Graphic file (type png)
 <use ./ryska/osausecky1.png>
-Package pdftex.def Info: ./ryska/osausecky1.png  used on input line 1737.
+Package pdftex.def Info: ./ryska/osausecky1.png  used on input line 1739.
 (pdftex.def)             Requested size: 401.0914pt x 257.4573pt.
 <./ryska/osausecky2.png, id=469, 1200.73593pt x 676.02562pt>
 File: ./ryska/osausecky2.png Graphic file (type png)
 <use ./ryska/osausecky2.png>
-Package pdftex.def Info: ./ryska/osausecky2.png  used on input line 1738.
+Package pdftex.def Info: ./ryska/osausecky2.png  used on input line 1740.
 (pdftex.def)             Requested size: 480.28586pt x 270.40544pt.
 
-Overfull \hbox (28.71622pt too wide) in paragraph at lines 1737--1740
+Overfull \hbox (28.71622pt too wide) in paragraph at lines 1739--1742
 [][]
  []
 
 
-Overfull \hbox (90.28586pt too wide) in paragraph at lines 1737--1740
+Overfull \hbox (90.28586pt too wide) in paragraph at lines 1739--1742
 []
  []
 
 [45 <./ryska/osausecky1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1742--1743
+Underfull \hbox (badness 10000) in paragraph at lines 1744--1745
 
  []
 
 <./ryska/osarovnobezek1.png, id=476, 593.21625pt x 337.26pt>
 File: ./ryska/osarovnobezek1.png Graphic file (type png)
 <use ./ryska/osarovnobezek1.png>
-Package pdftex.def Info: ./ryska/osarovnobezek1.png  used on input line 1751.
+Package pdftex.def Info: ./ryska/osarovnobezek1.png  used on input line 1753.
 (pdftex.def)             Requested size: 278.81168pt x 158.5122pt.
 
-Overfull \hbox (83.81168pt too wide) in paragraph at lines 1751--1752
+Overfull \hbox (83.81168pt too wide) in paragraph at lines 1753--1754
 [][] 
  []
 
 <./ryska/osarovnobezek2.png, id=477, 596.2275pt x 368.1253pt>
 File: ./ryska/osarovnobezek2.png Graphic file (type png)
 <use ./ryska/osarovnobezek2.png>
-Package pdftex.def Info: ./ryska/osarovnobezek2.png  used on input line 1755.
+Package pdftex.def Info: ./ryska/osarovnobezek2.png  used on input line 1757.
 (pdftex.def)             Requested size: 280.22696pt x 173.0189pt.
 
-Overfull \hbox (85.22696pt too wide) in paragraph at lines 1755--1756
+Overfull \hbox (85.22696pt too wide) in paragraph at lines 1757--1758
 [][] 
  []
 
 [46 <./ryska/osausecky2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1759--1760
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1762
 
  []
 
 <./ryska/osaruznobezek1.png, id=484, 504.38437pt x 377.91188pt>
 File: ./ryska/osaruznobezek1.png Graphic file (type png)
 <use ./ryska/osaruznobezek1.png>
-Package pdftex.def Info: ./ryska/osaruznobezek1.png  used on input line 1770.
+Package pdftex.def Info: ./ryska/osaruznobezek1.png  used on input line 1772.
 (pdftex.def)             Requested size: 237.06068pt x 177.6186pt.
 
-Overfull \hbox (42.06068pt too wide) in paragraph at lines 1770--1771
+Overfull \hbox (42.06068pt too wide) in paragraph at lines 1772--1773
 [][] 
  []
 
 <./ryska/osaruznobezek2.png, id=485, 709.14937pt x 496.85625pt>
 File: ./ryska/osaruznobezek2.png Graphic file (type png)
 <use ./ryska/osaruznobezek2.png>
-Package pdftex.def Info: ./ryska/osaruznobezek2.png  used on input line 1774.
+Package pdftex.def Info: ./ryska/osaruznobezek2.png  used on input line 1776.
 (pdftex.def)             Requested size: 283.65472pt x 198.73897pt.
 
-Overfull \hbox (88.65472pt too wide) in paragraph at lines 1774--1775
+Overfull \hbox (88.65472pt too wide) in paragraph at lines 1776--1777
 [][] 
  []
 
@@ -1193,10 +1207,10 @@ Overfull \hbox (88.65472pt too wide) in paragraph at lines 1774--1775
 <./ryska/soustredne1.png, id=493, 563.10374pt x 440.39531pt>
 File: ./ryska/soustredne1.png Graphic file (type png)
 <use ./ryska/soustredne1.png>
-Package pdftex.def Info: ./ryska/soustredne1.png  used on input line 1786.
+Package pdftex.def Info: ./ryska/soustredne1.png  used on input line 1788.
 (pdftex.def)             Requested size: 264.6588pt x 206.98581pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1782--1787
+Underfull \hbox (badness 10000) in paragraph at lines 1784--1789
 
  []
 
@@ -1204,17 +1218,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1782--1787
 <./ryska/soustredne2.png, id=501, 572.1375pt x 418.56375pt>
 File: ./ryska/soustredne2.png Graphic file (type png)
 <use ./ryska/soustredne2.png>
-Package pdftex.def Info: ./ryska/soustredne2.png  used on input line 1792.
+Package pdftex.def Info: ./ryska/soustredne2.png  used on input line 1794.
 (pdftex.def)             Requested size: 268.90465pt x 196.72498pt.
  [49 <./ryska/soustredne1.png> <./ryska/soustredne2.png>]
 <./ryska/ekvidistantykruznice1.png, id=509, 589.4522pt x 481.04718pt>
 File: ./ryska/ekvidistantykruznice1.png Graphic file (type png)
 <use ./ryska/ekvidistantykruznice1.png>
 Package pdftex.def Info: ./ryska/ekvidistantykruznice1.png  used on input line 
-1806.
+1808.
 (pdftex.def)             Requested size: 223.99416pt x 182.79982pt.
 
-Overfull \hbox (28.99416pt too wide) in paragraph at lines 1806--1807
+Overfull \hbox (28.99416pt too wide) in paragraph at lines 1808--1809
 [][] 
  []
 
@@ -1222,19 +1236,96 @@ Overfull \hbox (28.99416pt too wide) in paragraph at lines 1806--1807
 File: ./ryska/ekvidistantykruznice2.png Graphic file (type png)
 <use ./ryska/ekvidistantykruznice2.png>
 Package pdftex.def Info: ./ryska/ekvidistantykruznice2.png  used on input line 
-1809.
+1811.
 (pdftex.def)             Requested size: 234.87334pt x 198.73897pt.
 
-Overfull \hbox (39.87334pt too wide) in paragraph at lines 1809--1810
+Overfull \hbox (39.87334pt too wide) in paragraph at lines 1811--1812
 [][] 
  []
 
 [50 <./ryska/ekvidistantykruznice1.png> <./ryska/ekvidistantykruznice2.png>]
-[51]
-Overfull \vbox (73.90024pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
+
+ []
 
 
-[52] (./mathe-mat.aux)
+Overfull \hbox (31.57141pt too wide) in paragraph at lines 1820--1821
+[]\OT1/cmr/bx/n/12 rozbor ^^Sulohy \OT1/cmr/m/n/12 - p^^Tredpokl^^Sad^^Same ^^T
+ze exis-tuje ale-spo^^Tn je-den hle-dan^^Sy troj^^Suheln^^S^^Pk,
+ []
+
+
+Overfull \hbox (11.73701pt too wide) in paragraph at lines 1826--1827
+[][] 
+ []
+
+<./ryska/konstrukce1.png, id=518, 771.63281pt x 507.39563pt>
+File: ./ryska/konstrukce1.png Graphic file (type png)
+<use ./ryska/konstrukce1.png>
+Package pdftex.def Info: ./ryska/konstrukce1.png  used on input line 1834.
+(pdftex.def)             Requested size: 385.81546pt x 253.69719pt.
+[51 <./ryska/konstrukce1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1842--1844
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1845--1849
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1856--1857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1863--1864
+
+ []
+
+[52]
+<./ryska/orient1.png, id=529, 505.89pt x 327.47343pt>
+File: ./ryska/orient1.png Graphic file (type png)
+<use ./ryska/orient1.png>
+Package pdftex.def Info: ./ryska/orient1.png  used on input line 1877.
+(pdftex.def)             Requested size: 202.3524pt x 130.98705pt.
+
+Overfull \hbox (26.85359pt too wide) in paragraph at lines 1877--1878
+[][] 
+ []
+
+<./ryska/orient2.png, id=530, 492.33937pt x 310.91156pt>
+File: ./ryska/orient2.png Graphic file (type png)
+<use ./ryska/orient2.png>
+Package pdftex.def Info: ./ryska/orient2.png  used on input line 1881.
+(pdftex.def)             Requested size: 196.93225pt x 124.36241pt.
+
+Overfull \hbox (21.43344pt too wide) in paragraph at lines 1881--1882
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1870--1884
+
+ []
+
+<./ryska/translace.png, id=531, 453.94594pt x 245.41687pt>
+File: ./ryska/translace.png Graphic file (type png)
+<use ./ryska/translace.png>
+Package pdftex.def Info: ./ryska/translace.png  used on input line 1890.
+(pdftex.def)             Requested size: 363.15724pt x 196.33376pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1887--1891
+
+ []
+
+[53 <./ryska/orient1.png> <./ryska/orient2.png>] [54 <./ryska/translace.png>]
+[55]
+Overfull \vbox (6.13354pt too high) has occurred while \output is active []
+
+
+[56] (./mathe-mat.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1243,10 +1334,10 @@ Package rerunfilecheck Info: File `mathe-mat.out' has not changed.
 (rerunfilecheck)             Checksum: FE69FC0F97BC89F0A0E6AE08E77E5796;6141.
  ) 
 Here is how much of TeX's memory you used:
- 33913 strings out of 474103
- 786640 string characters out of 5747481
+ 34029 strings out of 474103
+ 788842 string characters out of 5747481
  1981496 words of memory out of 5000000
- 55601 multiletter control sequences out of 15000+600000
+ 55703 multiletter control sequences out of 15000+600000
  570997 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,14n,107p,723b,2157s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1267,10 +1358,10 @@ nts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mathe-mat.pdf (52 pages, 754473 bytes).
+Output written on mathe-mat.pdf (56 pages, 820152 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 532 compressed objects within 6 object streams
- 190 named destinations out of 1000 (max. 500000)
- 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 684 PDF objects out of 1000 (max. 8388607)
+ 553 compressed objects within 6 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 327 words of extra memory for PDF output out of 10000 (max. 10000000)
 

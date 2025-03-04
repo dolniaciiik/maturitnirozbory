@@ -7,6 +7,8 @@
 \usepackage{hyperref}
 \usepackage{subcaption}
 \usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{gensymb}
 \graphicspath{ {./ryska} }
 \usetikzlibrary{patterns}
 \floatstyle{boxed} 
@@ -1810,8 +1812,84 @@ Pro $d < r$ sjednocení kružnic $k_1(S, r+d) \cup k_2(S, r-d)$; pro $d \geq r$ 
 \end{minipage}
 \end{figure}
 
+\pagebreak
+
 \section{Konstrukce trojúhelníků a čtyřúhelníků}
+Řešení konstrukční úlohy má tyto fáze:\\
+\begin{itemize}
+\item \textbf{rozbor úlohy} - předpokládáme že existuje alespoň jeden hledaný trojúhelník, ten načrtneme a vyznačíme hledané prvky; hledáme vztahy a množiny bodů
+\item \textbf{zápis konstrukce} - symbolický zápis všech kroků kontrukce (+ pomocný náčrtek)
+\item \textbf{konstrukce} - sestrojíme trojúhelník (všechna řešení nebo jen zvolenou polorovinu) podle zápisu
+\item \textbf{závěr} - uvedeme počet řešení, popř. zkouška
+\end{itemize}
+
+\rule{13.5cm}{0.4pt}
+
+\textbf{\color{green} Sestroj trojúhelník \textit{ABC}, je-li dáno: $a=6cm, b = 5cm, \beta = 50 \degree $.} \color{black}\\
+\textbf{Rozbor úlohy:} po sestrojení strany \textit{BC} s délkou 6 cm, musíme najít vrchol \textit{A}, který je od vrcholu \textit{C} vzdálen 5 cm, leží tedy na kružnici $k(C, 5cm)$;
+dále víme, že vrchol \textit{A} leží na polopřímce \textit{BX} tak, že velikost úhlu \textit{XBC} je $50 \degree$; vrchol \textit{A} leží v průsečíku množin bodů polopřímky \textit{BX} 
+a kružnice \textit{k}. 
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{konstrukce1}
+\end{figure}
+Pokud nejsou zadány údaje konkrétně, ale pouze obecně, konstrukce se neprovádí a místo závěru se provede \textbf{diskuse řešitelnosti}.\\
+U $\triangle ABC$ by vypadala: $a > 0, 0 \degree < \beta < 180\degree$; jedno řešení: $\beta < 90\degree \land b = a \sin \beta$ nebo $\beta \geq 90 \degree \land b > a$;
+dvě různá řešení: $\beta < 90\degree \land b > a \sin \beta$.
+
 \section{Shodná zobrazení}
+
+Zobrazení \textit{Z} v rovině je předpis, který každému bodu \textit{X} roviny přiřazuje právě jeden bod \textit{X'} roviny. Bod \textit{X} nazýváme \textbf{vzor}, bod \textit{X'} jeho \textbf{obraz}. Zápis: $Z: X \rightarrow X'$.\\
+Bod \textit{X}, pro něhož obraz \textit{X'} platí, že $X = X'$, nazýváme \textbf{samodružný}. Zobrazení, ve kterém je každý bod samodružný nazýváme \textbf{identita}.\\
+
+Zobrazení nazýváme \textbf{shodné zobrazení} (nebo též \textbf{shodnost}), právě když obrazem každé úsečky \textit{AB} je úsečka \textit{A'B'} shodná s \textit{AB}.\\
+Pokud ověřujeme shodnost dvou útvarů, a pouze průsvitku otáčíme nebo posouváme, mluvíme o \textbf{přímé shodnosti}. Pokud průsvitku převrátíme na druhou stranu, mluvíme o
+\textbf{nepřímé shodnosti}.\\
+V každém  shodném zobrazení platí:\\
+\begin{itemize}
+\item obrazem přímky je přímka; obrazem rovnoběžek jsou rovnoběžky
+\item obrazem polopřímky je polopřímka; obrazem opačných polopřímek jsou opačné polopřímky
+\item obrazem úhlu \textit{AVB} je úhel \textit{A'V'B'}, který je shodný s úhlem \textit{AVB}
+\end{itemize}
+
+\subsection*{Osová souměrnost}
+\textbf{Osová souměrnost s osou o} (zapisujeme $O(o): X \rightarrow X'$) je shodné zobrazení, které přiřazuje:\\
+\begin{itemize}
+\item každému bodu $X \notin o$ obraz $X'$ tak, že úsečka $XX'$ je kolmá na osu \textit{o} a střed úsečky $XX'$ leží na ose o
+\item každému bodu $X \in o$ obraz $X'$ tak, že $X = X'$
+\end{itemize}
+
+\subsection*{Středová souměrnost}
+\textbf{Středová souměrnost se středem S} (zapisujeme $S(S): X \rightarrow X'$) je shodné zobrazení. které přiřazuje:\\
+\begin{itemize}
+\item každému bodu $X \neq S$ obraz $X'$ tak, že bod $S$ je středem úsečky $XX'$
+\item bodu $S$ bod $S'=S$
+\end{itemize}
+
+\subsection*{Orientovaná úsečka}
+\textbf{Orientovaná úsečka }$\overrightarrow{\rm AB}$ je úsečka, u které rozlišujeme počáteční bod \textit{A} a koncový bod \textit{B} (vpodstatě vektor).\\
+\textbf{Velikost} orientované úsečky je definována jako $|AB|$.\\
+\textbf{Nulová orientovaná úsečka} má nulovou velikost a její počáteční i koncový bod splývají.\\
+Jsou-li dvě orientované úsečky rovnoběžné, říkáme, že mají \textbf{stejný směr}. Navíc říkáme, že jsou:\\
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.45\textwidth}
+\includegraphics[scale=0.4]{orient1}
+\subcaption{souhlasně orientované}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\includegraphics[scale=0.4]{orient2}
+\subcaption{nesouhlasně orientované}
+\end{minipage}
+\end{figure} 
+
+\subsection*{Translace}
+\textbf{Posunutí} (zapisujeme $T(\overrightarrow{\rm AB}): X \rightarrow X'$) je shodné zobrazení, které přiřazuje každému bodu $X$ obraz $X'$ tak, že úsečky $\overrightarrow{\rm AB}$ a 
+$\overrightarrow{\rm XX'}$ mají stejný směr, orientaci a velikost.\\
+\begin{figure}[H]
+\includegraphics[scale=0.8]{translace}
+\end{figure}
+
 \section{Podobná zobrazení}
 \section{Pythagorova a Eukleidovy věty}
 \section{Trigonometrie obecného trojúhelníku}
