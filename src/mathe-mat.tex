@@ -16,8 +16,8 @@
 \newcommand{\imply}{\Rightarrow}
 \newcommand{\equiva}{\Leftrightarrow}
 
-\title{Matematika pro dementy}
-\author{Fantomas}
+\title{Matematika pro sigmy}
+\author{Fudži Mi Nagule}
 \date{Únor 2025}
 
 \begin{document}
@@ -1891,8 +1891,107 @@ $\overrightarrow{\rm XX'}$ mají stejný směr, orientaci a velikost.\\
 \end{figure}
 
 \section{Podobná zobrazení}
+tady cekam na floru, protoze asi nemam ty archy? jako vim co to je, takovy to homotetie, rotace a tak ale idk zapis k tomu zejo
 \section{Pythagorova a Eukleidovy věty}
+
+\subsection*{Pythagorova věta}
+\textit{Obsah čtverce sestrojeného nad přeponou pravoúhlého trojúhelníku je roven součtu obsahu čtverců sestrojených nad oběma odvěsnami.}\\
+Symbolicky zapisujeme: $c^2=a^2+b^2$, kde \textit{c} je přepona.\\
+Znění věty lze rozšířit i na např. půlkruhy.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{pv1}
+\end{figure}
+
+\subsection*{Eukleidovy věty}
+Výška v pravoúhlém trojuhelníku je vzdálenost vrcholu při pravém úhlu od přímky, na níž leží přepona. Pata \textit{P} výšky rozdělí přeponu na dva úseky $c_a$ a $c_b$.
+\subsubsection*{Eukleidova věta o výšce}
+\textit{Obsah čtverce sestrojeného nad výškou pravoúhlého trojúhelníku je roven obsahu obdélníku, jehož strany tvoří oba úseky přepony.}\\
+\begin{center}
+$v^2=c_a \cdot c_b$
+\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{evv}
+\end{figure}
+\subsubsection*{Eukleidova věta o odvěsně}
+\textit{Obsah čtverce sestrojeného nad odvěsnou pravoúhlého trojúhelníku je roven obsahu obdélníku, jehož strany tvoří přepona a přilehlý úsek.}\\
+\begin{center}
+$a^2 = c \cdot c_a \lor b^2 = c \cdot c_b$
+\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{evo}
+\end{figure}
+
+\subsection*{Převod trojúhelníku na obdélník}
+Máme-li bez výpočtu sestrojit obdélník, který má stejný obsah jako daný trojúhelník, využijeme obsah trojúhelníku: $S = \frac{a\cdot v_a}{2}$ a upravíme jej na tvar 
+$S = a \cdot \frac{v_a}{2}$. Sestrojit úsečku $b = \frac{v_a}{2}$ lze pomocí kružítka a pravítka. Máme vzorec $S = a \cdot b$, což je obsah obdélníku se stranami $a,b=\frac{1}{2}v_a$.\\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{prevodtnaob}
+\end{figure}
+
+\pagebreak
+
+\subsection*{Převod obdélníku na čtverec}
+Jsou dva způsoby převodu:\\
+\subsubsection*{První s využitím EVV}
+Sestrojíme úsečku \textit{AB} délky $a+b$ a nad ní Thaletovu kružnici. Bodem \textit{P} (dělí \textit{AB} na dva úseky) sestrojíme kolmici na \textit{AB}. Průsečík s kružnicí označíme 
+\textit{C}. $\triangle ABC$ je pravoúhlý, \textit{AB} je přepona a úsečka \textit{CP} výška. Z EVV plyne: $|AP|\cdot |BP|=|CP|^2 \imply a \cdot = v^2$ a výška má velikost $v=\sqrt{ab}$
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{ponc1}
+\includegraphics[scale=0.3]{ponc2}
+\includegraphics[scale=0.3]{ponc3}
+\end{figure} 
+\subsubsection*{Druhý s využitím EVO}
+Delší stranu obdélníku označíme \textit{AB} a zvolíme na ní pod \textit{P} tak, aby $|PB| = b$. Nad \textit{AB} sestrojíme Thaletovu kružnici a bodem \textit{P} kolmici k \textit{AB}.
+Průsečík komice a kružnice označíme \textit{C}. $\triangle ABC$ je pravoúhlý s přeponou \textit{AB}, odvěsnou \textit{BC} a přilehlým úsekem \textit{PB}. 
+Z EVO plyne: $|AP|\cdot |BP|= |BC|^2 \imply a \cdot b = x^2$, úsečka $x=\sqrt{ab}$. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{ponc4}
+\includegraphics[scale=0.35]{ponc5}
+\includegraphics[scale=0.35]{ponc6}
+\end{figure} 
+
 \section{Trigonometrie obecného trojúhelníku}
+Nechť je dán libovolný trojúhleník \textit{ABC} se stranami \textit{a,b,c} a vnitřními úhly $\alpha,\beta,\gamma$. Pak platí:
+\subsection*{Sinová věta}
+\begin{center}
+$\frac{a}{b}=\frac{\sin \alpha}{\sin \beta} \lor \frac{a}{c}=\frac{\sin \alpha}{\sin \gamma} \lor \frac{b}{c}=\frac{\sin \beta}{\sin \gamma}$\\
+souhrnně: $a:b:c = \sin \alpha : \sin \beta : \sin \gamma$
+\end{center}
+
+\subsection*{Kosinová věta}
+$c^2=a^2+b^2-2ab\cos \gamma$, resp.\\
+$b^2=a^2+c^2-2ac\cos \beta$, resp.\\
+$a^2=b^2+c^2-2bc\cos \alpha$
+
+\subsection*{Obsah a poloměry}
+\begin{itemize}
+\item \textbf{obsah} $\triangle ABC$ je roven: $S = \frac{1}{2}ab\sin \gamma$, resp. $S = \frac{1}{2}ac\sin \beta$
+\item \textbf{poloměr kružnice vepsané} je roven: $\rho = \frac{S}{s}$, kde $s=\frac{1}{2}(a+b+c)$
+\item \textbf{poloměr kružnice opsané} je roven: $r = \frac{a}{2\sin \alpha}=\frac{b}{2\sin \beta}=\frac{c}{2\sin \gamma}$
+\end{itemize}
+
+\subsection*{Úhly při slovních úlohách}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{vyskovyuhel}
+\vspace{2cm}
+\begin{itemize}
+\item $\omega$ ... výška nad obzorem
+\item $\alpha$ ... výškový úhel
+\item $\alpha'$ ... zenitový úhel
+\item $\beta$ ... hloubkový úhel
+\item $\epsilon$ ... zorný úhel
+\end{itemize}
+\end{figure} 
+
 \section{Stereometrie – polohové vlastnosti}
 \section{Stereometrie – metrické vlastnosti}
 \section{Stereometrie – objem a povrch těles}
