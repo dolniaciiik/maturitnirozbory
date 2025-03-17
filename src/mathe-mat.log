@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  15 MAR 2025 01:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  17 MAR 2025 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1321,90 +1321,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 1887--1891
  []
 
 [53 <./ryska/orient1.png> <./ryska/orient2.png>]
+Overfull \hbox (5.68579pt too wide) in paragraph at lines 1894--1896
+\OT1/cmr/bx/n/12 Orientovan^^Sy ^^Suhel \OT1/cmr/m/n/12 je uspo^^Tr^^Sadan^^Sa 
+dvo-jice po-lop^^Tr^^S^^Pmek se spole^^Tcn^^Sym po^^Tc^^Satkem.
+ []
+
 <./ryska/pv1.png, id=543, 766.36313pt x 506.6428pt>
 File: ./ryska/pv1.png Graphic file (type png)
 <use ./ryska/pv1.png>
-Package pdftex.def Info: ./ryska/pv1.png  used on input line 1904.
+Package pdftex.def Info: ./ryska/pv1.png  used on input line 1908.
 (pdftex.def)             Requested size: 229.9107pt x 151.994pt.
- [54 <./ryska/translace.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1910--1911
+[54 <./ryska/translace.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1915
 
  []
 
-<./ryska/evv.png, id=550, 788.19469pt x 460.72125pt>
+<./ryska/evv.png, id=551, 788.19469pt x 460.72125pt>
 File: ./ryska/evv.png Graphic file (type png)
 <use ./ryska/evv.png>
-Package pdftex.def Info: ./ryska/evv.png  used on input line 1916.
+Package pdftex.def Info: ./ryska/evv.png  used on input line 1920.
 (pdftex.def)             Requested size: 236.46022pt x 138.21744pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1919--1920
+Underfull \hbox (badness 10000) in paragraph at lines 1923--1924
 
  []
 
 [55 <./ryska/pv1.png> <./ryska/evv.png>]
-<./ryska/evo.png, id=561, 831.85782pt x 450.18187pt>
+<./ryska/evo.png, id=562, 831.85782pt x 450.18187pt>
 File: ./ryska/evo.png Graphic file (type png)
 <use ./ryska/evo.png>
-Package pdftex.def Info: ./ryska/evo.png  used on input line 1925.
+Package pdftex.def Info: ./ryska/evo.png  used on input line 1929.
 (pdftex.def)             Requested size: 249.55927pt x 135.0556pt.
-<./ryska/prevodtnaob.png, id=562, 665.48625pt x 344.78813pt>
+<./ryska/prevodtnaob.png, id=563, 665.48625pt x 344.78813pt>
 File: ./ryska/prevodtnaob.png Graphic file (type png)
 <use ./ryska/prevodtnaob.png>
-Package pdftex.def Info: ./ryska/prevodtnaob.png  used on input line 1933.
+Package pdftex.def Info: ./ryska/prevodtnaob.png  used on input line 1937.
 (pdftex.def)             Requested size: 399.29483pt x 206.87447pt.
 
-Overfull \hbox (9.29483pt too wide) in paragraph at lines 1933--1934
+Overfull \hbox (9.29483pt too wide) in paragraph at lines 1937--1938
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1934
+Underfull \hbox (badness 10000) in paragraph at lines 1933--1938
 
  []
 
 [56 <./ryska/evo.png> <./ryska/prevodtnaob.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1939--1940
+Underfull \hbox (badness 10000) in paragraph at lines 1943--1944
 
  []
 
-<./ryska/ponc1.png, id=570, 817.55438pt x 451.6875pt>
+<./ryska/ponc1.png, id=571, 817.55438pt x 451.6875pt>
 File: ./ryska/ponc1.png Graphic file (type png)
 <use ./ryska/ponc1.png>
-Package pdftex.def Info: ./ryska/ponc1.png  used on input line 1945.
+Package pdftex.def Info: ./ryska/ponc1.png  used on input line 1949.
 (pdftex.def)             Requested size: 245.2682pt x 135.5073pt.
-<./ryska/ponc2.png, id=571, 824.32968pt x 488.57532pt>
+<./ryska/ponc2.png, id=572, 824.32968pt x 488.57532pt>
 File: ./ryska/ponc2.png Graphic file (type png)
 <use ./ryska/ponc2.png>
-Package pdftex.def Info: ./ryska/ponc2.png  used on input line 1946.
+Package pdftex.def Info: ./ryska/ponc2.png  used on input line 1950.
 (pdftex.def)             Requested size: 247.30081pt x 146.57372pt.
-<./ryska/ponc3.png, id=572, 946.28531pt x 453.19313pt>
+<./ryska/ponc3.png, id=573, 946.28531pt x 453.19313pt>
 File: ./ryska/ponc3.png Graphic file (type png)
 <use ./ryska/ponc3.png>
-Package pdftex.def Info: ./ryska/ponc3.png  used on input line 1947.
+Package pdftex.def Info: ./ryska/ponc3.png  used on input line 1951.
 (pdftex.def)             Requested size: 283.88779pt x 135.95898pt.
 [57 <./ryska/ponc1.png> <./ryska/ponc2.png> <./ryska/ponc3.png>]
-<./ryska/ponc4.png, id=583, 605.26125pt x 322.20375pt>
+<./ryska/ponc4.png, id=584, 605.26125pt x 322.20375pt>
 File: ./ryska/ponc4.png Graphic file (type png)
 <use ./ryska/ponc4.png>
-Package pdftex.def Info: ./ryska/ponc4.png  used on input line 1956.
+Package pdftex.def Info: ./ryska/ponc4.png  used on input line 1960.
 (pdftex.def)             Requested size: 211.8446pt x 112.773pt.
-<./ryska/ponc5.png, id=584, 676.77844pt x 402.75468pt>
+<./ryska/ponc5.png, id=585, 676.77844pt x 402.75468pt>
 File: ./ryska/ponc5.png Graphic file (type png)
 <use ./ryska/ponc5.png>
-Package pdftex.def Info: ./ryska/ponc5.png  used on input line 1957.
+Package pdftex.def Info: ./ryska/ponc5.png  used on input line 1961.
 (pdftex.def)             Requested size: 236.876pt x 140.96625pt.
-<./ryska/ponc6.png, id=585, 849.1725pt x 532.99126pt>
+<./ryska/ponc6.png, id=586, 849.1725pt x 532.99126pt>
 File: ./ryska/ponc6.png Graphic file (type png)
 <use ./ryska/ponc6.png>
-Package pdftex.def Info: ./ryska/ponc6.png  used on input line 1958.
+Package pdftex.def Info: ./ryska/ponc6.png  used on input line 1962.
 (pdftex.def)             Requested size: 297.21483pt x 186.54973pt.
  [58 <./ryska/ponc4.png> <./ryska/ponc5.png> <./ryska/ponc6.png>]
-<./ryska/vyskovyuhel.png, id=594, 1051.67906pt x 563.10374pt>
+<./ryska/vyskovyuhel.png, id=595, 1051.67906pt x 563.10374pt>
 File: ./ryska/vyskovyuhel.png Graphic file (type png)
 <use ./ryska/vyskovyuhel.png>
-Package pdftex.def Info: ./ryska/vyskovyuhel.png  used on input line 1984.
+Package pdftex.def Info: ./ryska/vyskovyuhel.png  used on input line 1988.
 (pdftex.def)             Requested size: 315.50615pt x 168.93242pt.
- [59] [60 <./ryska/vyskovyuhel.png>] [61] (./mathe-mat.aux)
+ [59]
+Overfull \hbox (1.01994pt too wide) in paragraph at lines 2000--2002
+\OT1/cmr/bx/n/12 Voln^^Se rov-nob^^Te^^Tzn^^Se prom^^S^^Pt^^San^^S^^P \OT1/cmr/
+m/n/12 je jedna ze zob-ra-zo-vac^^S^^Pch me-tod. \OT1/cmr/bx/n/12 Pr^^Wum^^Tetn
+a
+ []
+
+
+Overfull \hbox (14.55537pt too wide) in paragraph at lines 2005--2006
+[]\OT1/cmr/m/n/12 Pr^^Wum^^Tetem ro-viny je cel^^Sa pr^^Wum^^Tetna, nebo jen p^
+^Tr^^S^^Pmka, je-li ro-vina prom^^S^^Ptac^^S^^P. 
+ []
+
+[60 <./ryska/vyskovyuhel.png>] [61] [62] (./mathe-mat.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1413,8 +1431,8 @@ Package rerunfilecheck Info: File `mathe-mat.out' has not changed.
 (rerunfilecheck)             Checksum: FE69FC0F97BC89F0A0E6AE08E77E5796;6141.
  ) 
 Here is how much of TeX's memory you used:
- 34178 strings out of 474103
- 791721 string characters out of 5747481
+ 34180 strings out of 474103
+ 791739 string characters out of 5747481
  1981496 words of memory out of 5000000
  55835 multiletter control sequences out of 15000+600000
  570997 words of font info for 85 fonts, out of 8000000 for 9000
@@ -1433,14 +1451,15 @@ c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive
 f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mathe-mat.pdf (61 pages, 1101528 bytes).
+nts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c
+:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texliv
+e/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on mathe-mat.pdf (62 pages, 1111989 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 587 compressed objects within 6 object streams
- 217 named destinations out of 1000 (max. 500000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
+ 219 named destinations out of 1000 (max. 500000)
  382 words of extra memory for PDF output out of 10000 (max. 10000000)
 
