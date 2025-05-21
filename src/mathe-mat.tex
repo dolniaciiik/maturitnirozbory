@@ -2009,18 +2009,272 @@ Vlastnosti VRP:
 \item Útvar, který leží v průmětně nebo v rovině s průmětnou rovnoběžné, se promítá do útvaru, který je s ním shodný.
 \end{itemize}
 \section{Stereometrie – metrické vlastnosti}
+za všim hledej trojuhelníky, všude prostě\\
+A BACHA NA FALEŠNÝ PRŮSEČÍKY!!!!
 \section{Stereometrie – objem a povrch těles}
+vzorečky najdeš v tabulkách
 \section{Analytická geometrie – body a vektory}
+Určení bodu $A = [x_0, y_0]$ se používá uspořádaná dvojice v E2. Eukleidovský prostor je rozdělen na 4 kvadranty.\\
+vzorečky najdeš v tabulkách - tohle tema je fakt ez, budu si sem vypisovat jenom poznamky na ktery bych jinak zapomněl hihi\\
+smíšený součin - determinant!\\
+\newpage
 \section{Analytická geometrie – přímka a polorovina v E2}
+\subsection*{Přímka}
+Přímka má 4 vyjádření:\\
+\begin{tabular}{| c | c | c | c |}
+	\hline
+	 \textbf{parametrické} & \textbf{obecné} & \textbf{směrnicové} & \textbf{úsekové}\\
+	 \hline
+	 $x= x_0+u_{1}t, y=y_0+u_{2}t $ & $ax+by+c=0$& $y = kx+q$&$\frac{x}{p}+\frac{y}{q}=1$\\
+	 \hline
+	 $\vec{s_p}=(u_1;u_2)$ & $\vec{n_p}=(a;b)=(u_2;-u_1)$ & $k = y' = \frac{u_2}{u_1} = \tan \varphi$ & p,q jsou úseky\\
+	 \hline
+\end{tabular}
+
+\subsection*{Polorovina}
+Nerovnice $ax+by+c \geq 0$ nebo $ax+by+c \leq 0$ vyjadřují navzájem opačné poloroviny s hraniční přímkou $ax+by+c=0$.\\
+\textbf{POZOR} $\geq$ je včetně hraniční přímky, $<$ je bez!!!!
 \section{Analytická geometrie – přímka a rovina v E3}
+to samý co předtim, jenom o jednu osu víc, jako fakt nevim co k tomu napsat\\
+bacha můžou to bejt i mimoběžky!\\
+a vektory nemuzes jenom tak prohodit a zamenit znamenko, tak to nefunguje
 \section{Analytická geometrie – kuželosečky}
+klasicky zase přehled:\\
+\begin{tabular}{| c | c | c | c |}
+	\hline
+	\textbf{kružnice} & \textbf{elipsa} & \textbf{parabola} & \textbf{hyperbola}\\
+	\hline
+	$(x-m)^2 + (y-n)^2 = r^2$ & $\frac{(x-m)^2}{a^2}+\frac{(y-n)^2}{b^2}=1$ & $\frac{(x-m)^2}{a^2}-\frac{(y-n)^2}{b^2}=1$ & $(x-m)^2=\pm2p(y-n)$\\
+	\hline
+\end{tabular}
+vzorečky jsou zase v tabulkách!\\
+klasicky zase poznámky:\\
+\begin{itemize}
+	\item převod z obecného tvaru - doplnění na čtverec
+	\item pomůcka - parabola - v minusovejch ypsilonech je \textbf{-}2p(\textbf{y}-n)
+\end{itemize}
 \section{Kombinatorika}
+\begin{tabular}{| c | c | c |}
+	\hline
+	\textbf{permutace} & \textbf{variace} & \textbf{kombinace}\\
+	\hline
+	$P(n)=n!$ & $V_{k} (n) = \frac{n!}{(n-k)!}$ & $C_{k} (n) = \frac{n!}{(n-k)!\cdot k!}= {{n}\choose{k}}$\\
+	\hline
+	V kde n=k & záleží na pořadí & nezáleží na pořadí\\
+	\hline
+	! & nPr & nCr\\
+	\hline
+	\textbf{s opak} & \textbf{s opak} & \textbf{s opak}\\
+	\hline
+	$P'(k_1,k_2,...,k_n) = \frac{(k_1+k_2+...+k_n)!}{k_1!\cdot k_2! \cdot ... \cdot k_n!}$ & $V'_k (n)= n^k$ & $C'_k (n)={{n+k-1}\choose{k}}$\\
+	\hline
+\end{tabular}
+
+\subsection*{Kombinační čísla}
+\begin{itemize}
+	\item ${{n}\choose{0}}={{n}\choose{n}}=1$
+	\item ${{n}\choose{1}}=n$
+	\item ${{n}\choose{k}}={{n}\choose{n-k}}$
+	\item ${{n}\choose{k}}+{{n}\choose{k+1}}={{n+1}\choose{k+1}}$
+	\item ${{n}\choose{k}} = \frac{n}{k}\cdot {{n-1}\choose{k-1}}$
+\end{itemize}
+
+\subsection*{Binomická věta}
+$(a+b)^n = {{n}\choose{0}}a^nb^0 + {{n}\choose{1}}a^{n-1}b^1 + .... + {{n}\choose{n-1}}a^1b^{n-1} + {{n}\choose{n}}a^0b^n =$
+\[ \sum_{k=0}^{n}a^{n-k}b^k \]
+
 \section{Pravděpodobnost}
 \section{Statistika}
 \section{Posloupnosti}
+\textbf{Posloupnost} je funkce, jejímž definičním oborem jsou $\mathbb{N}$. Je-li definičním oborem ${1,2,3,...,n}$ mluvíme o konečné posloupnosti.\\
+Posloupnost lze určit třemi způsoby:
+\begin{itemize}
+	\item výčtem několika členů, např. $3, 6, 9, 12, ...$
+	\item obecným vzorcem, např. $a_n = 3n$, nebo $\{3n\}_{n=1}^{\infty}$
+	\item rekurentním vyjádřením, např. $a_1=3, a_{n+1}=a_n+3$
+\end{itemize}
+
+\subsection*{Převod mezi vzorci}
+\[
+\begin{aligned}
+	VP: 7,9,11,13,15,17\\
+	RV: a_1 = 7, a_{n+1}=a_n+2\\
+\end{aligned}
+\]
+S obecným vzorcem je to trochu složitější:\\
+\begin{center}
+\begin{tabular}{| c | c |}
+$\mathbf{a_n}$ & \textbf{n}\\
+\hline
+7 & 1\\
+9 & 2\\
+11 & 3\\
+\end{tabular}
+\end{center}
+\[
+\begin{aligned}
+	7 = a_n + (1-1)\cdot d\\
+	9 = a_n + (2-1)\cdot d\\
+	d = 2\\
+	a_n = a_1 + (n-1) \cdot d\\
+	a_n = 7 + (n-1)\cdot 2\\
+	a_n = 7 + 2n - 2\\
+	a_n = 2n + 5\\
+\end{aligned}
+\]
+\subsection*{Vlastnosti posloupností}
+\begin{itemize}
+	\item Pokud $a_n < a_{n+1}$, posloupnost je rostoucí
+	\item Pokud $a_n > a_{n+1}$, posloupnost je klesající
+	\item Pokud $a_n \geq a_{n+1}$, posloupnost je nerostoucí
+	\item Pokud $a_n \leq a_{n+1}$, posloupnost je neklesající
+\end{itemize}
+Roustoucí a klesající posloupnosti jsou \textbf{ryze monotónní}.\\
+Posloupnost se nazývá \textbf{shora omezená}, právě když existuje alespoň jedno $h \in \mathbb{R}$ takové, že pro všechny členy platí $a_n \leq h$. Naopak \textbf{zdola omezená} je, pokud existuje alespoň jedno $d \in \mathbb{R}$, že pro všechny členy platí $a_n \geq d$.\\
+Posloupnost je \textbf{omezená}, právě když je shora i zdola omezená.
+
+\subsection*{Aritmetická posloupnost}
+Posloupnost je aritmetická, právě když rozdíl každých dvou sousedních členů je roven $d$ - diferenci.
+Tj. $(\forall n \in \mathbb{N}) a_{n+1}-a_n=d$\\
+Pro aritmetickou posloupnost platí:\\
+\begin{itemize}
+	\item $a_n = a_1 + (n-1)d$
+	\item $a_r = a_s + (r-s)d$
+	\item $s_n = a_1 + a_2 + ... + a_n = \frac{1}{2}n(a_1+a_n)$\footnote{na tohle přišel gauss asi ve třetí třídě}
+\end{itemize}
+
+\subsection*{Geometrická posloupnost}
+Posloupnost se nazývá geometrická, právě když podíl každých dvou sousedních členů je roven reálnému nenulovému $q$ - kvocientu,\\ tj. $(\forall n \in \mathbb{N})\frac{a_{n+1}}{a_n}=q$.\\
+
+Pro geometrickou posloupnost platí:\\
+\begin{itemize}
+	\item $a_n = a_1\cdot q^{n-1}$
+	\item $a_r = a_s\cdot q^{r-s}$
+	\item $s_n = a_1 + a_2 + ... + a_n = a_1\cdot \frac{1-q^n}{1-q}$
+\end{itemize}
+
+\subsection*{Užití geometrické posloupnosti - Finanční matematika}
+\subsubsection*{Pravidelný přírůstek}
+$a_n = a_0 (1+\frac{p}{100})^n$\\
+v podstatě úročení
+\subsubsection*{Pravidelný úbytek}
+$a_n = a_0 (1-\frac{p}{100})^n$\\
+v podstatě amortizace
+\subsubsection*{Pojmy finanční matematiky}
+\begin{itemize}
+	\item \textbf{Úrok} je částka, získaná veřitelem od dlužníka jako odměnu
+	\item \textbf{Úroková míra} je podíl úroku kapitálu za období
+	\item \textbf{Daň z úroku} je procentuální část úroku odvedená státu
+	\item \textbf{Doba splatnosti} je doba, po jejímž ukončení je věřitel oprávněn získat kapitál zpět
+	\item \textbf{Úroková doba} je doba, po kterou je kapitál úročen; standart \textit{30E/360} nebo \textit{ACT/365}
+	\item \textbf{Jednoduché úročení} je způsob úročení, kde se úrok na konci úrokovacího období počítá z počátečního kap.
+	\item \textbf{Složené úročení} je způsob úročení, kde se úrok přičítá k dosažené hodnotě kapitálu a dále se úročí
+	\item \textbf{Kontokorent} je účet, kde banka z kreditního zůstatku vyplácí úroky, z debetního zůstatku se vyplácí úroky bance
+	\item \textbf{Úmor dluhu} je ta část splátky úvěru, která snižuje dlužnou částku
+	\item \textbf{Anuitní splátka} je splátka stejné výše opakující se v pravidelných intervalech
+\end{itemize}
+\subsubsection*{Spoření}
+Spoření má 3 modely:\\
+\begin{enumerate}
+	\item Model I: klient ukládá pravidelně stejnou částku $K_0$ na \textbf{začátku} úrokovacích období
+	\item Model II: klient ukládá pravidelně stejnou částku $K_0$ na \textbf{konci} úrokovacích období
+	\item Model III: klient uloží při založení spoření částku $K_0$ a pak ukládá pravidelně stejnou částku $K_0$ na konci 
+\end{enumerate}
+
 \section{Limita posloupnosti a nekonečná geometrická řada}
+Posloupnost $\{a_n\}_{n=1}^{\infty}$ je \textbf{konvergentní}, právě když existuje takové reálně číslo $a$, pro které platí:\\
+Pro každé kladné reálné číslo $\epsilon$ existuje číslo $n_0$ takové, že pro každé $n \geq n_0$ je $|a_n-a|<\epsilon$.\\
+Číslo $a$ nazýváme \textbf{limita posloupnosti}, zapisujeme \[ \lim_{n \to \infty} a_n = a\]\\
+Pokud posloupnost není konvergentní, je \textbf{divergentní}.\\
+
+\subsection*{Věty o limitách}
+Nechť \[ \lim_{n\to\infty} a_n = a \land \lim_{n\to\infty} b_n = b \]
+\begin{itemize}
+	\item Každá posloupnost má nejvýše jednu limitu.
+	\item Každá konvergentní posloupnost je omezená.
+	\item \[ \lim_{n\to\infty} c\cdot a_n = c \cdot a \]
+	\item \[ \lim_{n\to\infty} (a_n \pm b_n) =  a \pm b\]
+	\item \[ \lim_{n\to\infty}  (a_n \cdot b_n) = a \cdot b\]
+	\item \[ \lim_{n\to\infty} \bigg(\frac{a_n}{b_n}\bigg) = \frac{a}{b} \]
+	\item \[ \lim_{n\to\infty} \frac{1}{n^k} = 0, k \in \mathbb{N}\]
+	\item  \[ \lim_{n\to\infty} q^n = 0, |q|<1 \]
+	\item \[ \lim_{n\to\infty} c = c \]
+\end{itemize}
+
+\subsection*{Nevlastní limita}
+Některé posloupnosti mají nevlastní limitu, např. \[ \lim_{n\to\infty} n^2 = +\infty \]\\
+Mohou nastat 3 případy:\\
+\begin{itemize}
+	\item posloupnost je konvergentní a má vlastní limitu, např. \[ \lim_{n\to\infty} \frac{1}{n}=0 \]
+	\item posloupnost je divergentní a má nevlastní limitu, např. \[ \lim_{n\to\infty} (1-n)=-\infty \]
+	\item posloupnost je divergentní a nemá limitu, např. \[ \lim_{n\to\infty} (-1)^n \text{ neexistuje}\]
+\end{itemize}
+
+\subsubsection*{Neurčité výrazy}
+\begin{itemize}
+	\item $\infty-\infty$
+	\item $1^\infty$
+	\item $0^0$
+	\item $\frac{\infty}{\infty}$
+	\item $\frac{0}{0}$
+	\item $0 \cdot \infty$
+\end{itemize}
+
+\subsection*{Nekonečná geometrická řada}
+Nechť je dána geometrická posloupnost $a_n$. \[ \sum_{n=1}^{\infty} a_n = a_1+a_2+a_3+...+a_n+... \] tento součet definujeme
+jako limitu posloupnosti částečných součtů, tj. \[ \lim_{n\to\infty} s_n \]
+Pro $|q|<1$ tato limita existuje a platí: $s = \frac{a_1}{1-q}$
+
 \section{Limita a derivace funkce}
+\subsection*{Spojitost funkce}
+Okolím bodu $a$ rozumíme otevřený interval $(a-\delta; a+\delta), \delta \in \mathbb{R}^+$. Číslo $a$ nazýváme střed okolí a číslo 
+$\delta$ poloměrem okolí. Okolí bodu $a$ značíme $U_\delta (a)$ a platí: $U_\delta (a)=\{x \in \mathbb{R}; |x-a|<\delta\}$. Prstencovým 
+okolím bodu $a$ rozumíme množinu $P_\delta (a) = U_\delta (a) \setminus \{a\}$\\
 
+Funkce $f$ je spojitá v bodě $a$ právě tehdy, když k libovolnému okolí bodu $f(a)$ existuje okolí bodu $a$ takové, že pro každé 
+$x$ z okolí bodu $a$ patří hodnota $f(x)$ do zvoleného okolí bodu $f(a)$.\\
+Funkce $f$ je spojitá v intervalu $(u, v)$ právě tehdy, když je spojitá v každém bodě tohoto intervalu.
 
+\subsection*{Limita funkce}
+Funkce $f$ má v bodě $a$ limitu $A$ právě tehdy, když k libovolnému okolí bodu $A$ existuje prstencové okolí bodu $a$ takové,
+že pro každé $x$ z prstencového okolí bodu $a$ patří hodnota $f(x)$ do zvoleného okolí bodu $A$.\\
+
+\[ \lim_{x \to \infty} f(x) = A\] a platí:\\
+\begin{itemize}
+	\item Funkce $f$ má v bodě $a$ nejvýše jednu limitu.
+	\item Funkce $f$ je v bodě $a$ spojitá právě tehdy, když platí \[ \lim_{x \to \infty} f(x) = f(a) \]
+\end{itemize} 
+\textbf{Věty pro výpočet limit najdu v tabulkách!!}
+\subsubsection*{Nevlastní limita}
+Funkce $f$ může mít v bodě $a$ nevlastní limitu $\pm \infty$, anebo může mít v nevlastním bodě $\pm \infty$ limitu. Sorry, tady je fakt pokokot teorie, to fakt rozepisovat nebudu. Prostě existujou i tyhle limity, a taky limita zprava a zleva ale na to taky seru, to si prostě nevytáhnu.
+
+\subsubsection*{Asymptota funkce}
+Přímku $y=ax+b$ nazýváme asymptotou funkce $f$, jestliže \[ \lim_{x \to \pm \infty} [f(x)-(ax-b)] = 0 \]
+Směrnici $a$ vypočítáme jako \[ a = \lim_{x \to \pm \infty} \frac{f(x)}{x} \] a $b$ jako \[ b = \lim_{x \to \pm \infty} [f(x)-ax] \]
+
+\subsection*{Derivace funkce}
+Geometrický význam: derivace funkce v bodě je směrnice tečny v tomto bodě.\\
+Používá se $(\epsilon - \delta)$-definice, formulovaná Cauchym a Weierstrassem.\\
+Př.:\\
+\begin{align*}
+	f: y = x^2\\
+	f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\\
+	f'(x) = \lim_{h \to 0} \frac{(x+h)^2-x^2}{h} \\
+	 f'(x) = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+	 f'(x) = \lim_{h \to 0} \frac{2xh+h^2}{h} \\
+	 f'(x) = \lim_{h \to 0} (2x+h)  \\
+	 f'(x) = 2x + 0 = 2x 
+\end{align*}
+
+\textbf{Derivace elementárních funkcí najdu v tabulkách!}
+\newpage
+\subsection*{Průběh funkce}
+\textbf{Návod}:
+\begin{enumerate}
+	\item Lokální extrémy - $y'=0 \land (y'' > 0 \imply LMIN \land y'' < 0 \imply LMAX)$
+	\item Intervaly monotónnosti - nulové body z $y'$ a tabulková metoda
+	\item Inflexní body - $y'' = 0 \land y''' \neq 0$
+	\item Konvexnost a konkávnost - nulové body z $y''$ a tabulková metoda (+ konvex - konkav)
+\end{enumerate}
 
 \end{document}
