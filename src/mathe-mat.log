@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.3.30)  21 MAY 2025 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.3.30)  21 MAY 2025 22:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1469,87 +1469,87 @@ Overfull \hbox (2.92506pt too wide) in paragraph at lines 2057--2072
  []
 
 [62] [63]
-Underfull \hbox (badness 10000) in paragraph at lines 2103--2105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2137--2140
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2129
 
  []
 
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 2147--2148
+Underfull \hbox (badness 10000) in paragraph at lines 2161--2164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2149--2150
+Underfull \hbox (badness 10000) in paragraph at lines 2171--2172
 
  []
 
 [65]
-Overfull \hbox (14.04553pt too wide) in paragraph at lines 2170--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2173--2174
+
+ []
+
+
+Overfull \hbox (14.04553pt too wide) in paragraph at lines 2194--2195
 []\OT1/cmr/bx/n/12 Jednoduch^^Se ^^Suro^^Tcen^^S^^P \OT1/cmr/m/n/12 je zp^^Wuso
 b ^^Suro^^Tcen^^S^^P, kde se ^^Surok na konci ^^Surokovac^^S^^Pho
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2177--2178
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 2201--2202
 
  []
 
 
-Overfull \hbox (22.69147pt too wide) in paragraph at lines 2179--2180
+Overfull \hbox (22.69147pt too wide) in paragraph at lines 2203--2204
 []\OT1/cmr/m/n/12 Model I: kli-ent ukl^^Sad^^Sa pra-vi-deln^^Te stej-nou ^^Tc^^
 Sastku $\OML/cmm/m/it/12 K[]$ \OT1/cmr/m/n/12 na \OT1/cmr/bx/n/12 za^^Tc^^Satku
  \OT1/cmr/m/n/12 ^^Surokovac^^S^^Pch
  []
 
 
-Overfull \hbox (13.0067pt too wide) in paragraph at lines 2180--2181
+Overfull \hbox (13.0067pt too wide) in paragraph at lines 2204--2205
 []\OT1/cmr/m/n/12 Model II: kli-ent ukl^^Sad^^Sa pra-vi-deln^^Te stej-nou ^^Tc^
 ^Sastku $\OML/cmm/m/it/12 K[]$ \OT1/cmr/m/n/12 na \OT1/cmr/bx/n/12 konci \OT1/c
 mr/m/n/12 ^^Surokovac^^S^^Pch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2187--2189
-
- []
-
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 2205--2207
+Underfull \hbox (badness 10000) in paragraph at lines 2211--2213
 
  []
 
 [67]
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2233
+Underfull \hbox (badness 10000) in paragraph at lines 2229--2231
 
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 2239--2241
+Underfull \hbox (badness 10000) in paragraph at lines 2254--2257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2242--2243
+Underfull \hbox (badness 10000) in paragraph at lines 2263--2265
 
  []
 
 [69]
-Underfull \hbox (badness 10000) in paragraph at lines 2256--2259
+Underfull \hbox (badness 10000) in paragraph at lines 2266--2267
 
  []
 
-[70] [71] (./mathe-mat.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 2280--2283
+
+ []
+
+[70] [71] [72] (./mathe-mat.aux)
 Package rerunfilecheck Info: File `mathe-mat.out' has not changed.
 (rerunfilecheck)             Checksum: FE69FC0F97BC89F0A0E6AE08E77E5796;6141.
  ) 
 Here is how much of TeX's memory you used:
- 33999 strings out of 476041
- 792177 string characters out of 5793174
+ 34002 strings out of 476041
+ 792208 string characters out of 5793174
  1905388 words of memory out of 6000000
  53658 multiletter control sequences out of 15000+600000
  526142 words of font info for 84 fonts, out of 8000000 for 9000
@@ -1576,10 +1576,10 @@ pe1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1200.pfb>
-Output written on mathe-mat.pdf (71 pages, 1139680 bytes).
+Output written on mathe-mat.pdf (72 pages, 1143600 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 668 compressed objects within 7 object streams
- 259 named destinations out of 1000 (max. 500000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 262 named destinations out of 1000 (max. 500000)
  382 words of extra memory for PDF output out of 10000 (max. 10000000)
 

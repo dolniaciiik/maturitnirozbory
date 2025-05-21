@@ -2084,7 +2084,31 @@ $(a+b)^n = {{n}\choose{0}}a^nb^0 + {{n}\choose{1}}a^{n-1}b^1 + .... + {{n}\choos
 \[ \sum_{k=0}^{n}a^{n-k}b^k \]
 
 \section{Pravděpodobnost}
+sorry, na tohle už fakt teď nemam, ale ve zkratce pravidlo součtu a součinu\\
+pak bernoulliho schema\\
+kdyz loterie, tak ty tri kombinacni cisla\\
+a zbytek freestyle prostě
+
 \section{Statistika}
+\subsection*{Charakteristika polohy}
+\begin{itemize}
+	\item \textbf{aritmetický průměr} - $\overline{x} = \frac{x_1+x_2+...+x_n}{n}$
+	\item \textbf{vážený aritmetický průměr} - $\overline{x} = \frac{u_1x_1 + u_2x_2 + ... + u_nx_n}{u_1+u_2+...+u_n}$
+	\item \textbf{harmonický průměr} - $\overline{x}_H = \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + ... + \frac{1}{x_n}}$ (pro dobu)
+	\item \textbf{geometrický průměr} - $\overline{x}_G = \sqrt[n]{x_1 \cdot x_2 \cdot ... \cdot x_n}$ (pro tempo výroby)
+	\item \textbf{medián} - $Med(x) = \tilde{x} = x_{\frac{n+1}{2}}$ anebo $ \tilde{x}=\frac{x_\frac{n}{2}+x_\frac{n+1}{2}}{2}$
+	\item \textbf{modus} - $Mod(x) = \hat{x}$ je znak s největší četností
+\end{itemize}
+\subsection*{Charakteristika variability}
+\begin{itemize}
+	\item \textbf{variační rozpětí} - $R = x_{max} - x_{min}$
+	\item \textbf{průměrná absolutní odchylka} - $\overline{d}_x = \frac{1}{n}\sum_{i=1}^{n}|x_i - \overline{x}|$
+	\item \textbf{mezikvartalové rozpětí} - $Q = \tilde{x}_{75} - \tilde{x}_{25}$ a \textbf{odchylka} - $q = \frac{1}{2}(\tilde{x}_{75}-\tilde{x}_{25})$
+	\item \textbf{rozptyl} - $s_x^2 = \frac{1}{2}\sum_{i=1}^{n}(x_i-\overline{x})$
+	\item \textbf{směrodatná odchylka} - $s_x = \sqrt{s_x^2}$
+	\item \textbf{variační koeficient} - $v_x = \frac{s_x}{\overline{x}}$
+\end{itemize}
+
 \section{Posloupnosti}
 \textbf{Posloupnost} je funkce, jejímž definičním oborem jsou $\mathbb{N}$. Je-li definičním oborem ${1,2,3,...,n}$ mluvíme o konečné posloupnosti.\\
 Posloupnost lze určit třemi způsoby:
